@@ -19,8 +19,8 @@ class MoviePost(models.Model):
     status = models.IntegerField(choices=POST_STATUS, default=0)
     updated_on = models.DateTimeField(auto_now=True)
     excerpt = models.TextField(blank=True)
-    imdb_rating = models.IntegerField(blank=False, null=False, default=0)
-    rotten_tomatoes_rating = models.SlugField(blank=False, null=False, default=0)
+    imdb_rating = models.TextField(blank=False, null=False, max_length=3, default="0")
+    rotten_tomatoes_rating = models.TextField(blank=False, null=False, max_length=3, default="0")
     our_rating = models.SlugField(blank=False, null=False, allow_unicode=True, default=0)
     class Meta:
         '''A meta class for meta data, posts are listed from newest to oldest'''
