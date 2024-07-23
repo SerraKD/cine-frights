@@ -28,3 +28,19 @@ class MoviePost(models.Model):
 
     def __str__(self):
         return f"{self.title}"
+
+class Comment(models.Model):
+    '''Class for user comments to the movie posts'''
+    post = models.ForeignKey(
+        MoviePost, on_delete=models.CASCADE, related_name="movie_comments")
+    username = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="movie_commenter")
+    content = models.TextField()
+    approved = models.BooleanField(default=False)
+    created_on = models.DateTimeField(auto_now_add=True)
+    user_rating = models.IntegerField(default=0)
+    class Meta:
+        '''A meta class for meta data, comments are listed from newest to oldest'''
+        ordering = ["-created_on"]
+    def __str__(self):
+        return f"{self.content | self.user_rating} by {self.username}"
