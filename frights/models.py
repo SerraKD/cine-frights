@@ -22,3 +22,9 @@ class MoviePosts(models.Model):
     imdb_rating = models.IntegerField(blank=False, null=False, default=0)
     rotten_tomatoes_rating = models.SlugField(blank=False, null=False, default=0)
     our_rating = models.SlugField(blank=False, null=False, allow_unicode=True, default=0)
+    class Meta:
+        '''A meta class for meta data, posts are listed from newest to oldest'''
+        ordering = ["-created_on"]
+
+    def __str__(self):
+        return f"{self.title}"
