@@ -1,6 +1,6 @@
 '''Imports'''
 from django.contrib import admin
-from frights.models import MoviePosts
+from frights.models import MoviePost
 
 # Register your models here.
-admin.site.register(MoviePosts)
+admin.site.register(MoviePost)
