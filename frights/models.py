@@ -20,5 +20,5 @@ class MoviePosts(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
     excerpt = models.TextField(blank=True)
     imdb_rating = models.IntegerField(blank=False, null=False, default=0)
-    rotten_tomatoes_rating = models.IntegerField(blank=False, null=False, default=0)
+    rotten_tomatoes_rating = models.SlugField(blank=False, null=False, default=0)
     # Add our ratings
