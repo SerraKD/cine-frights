@@ -43,4 +43,4 @@ class Comment(models.Model):
         '''A meta class for meta data, comments are listed from newest to oldest'''
         ordering = ["-created_on"]
     def __str__(self):
-        return f"{self.content | self.user_rating} by {self.username}"
+        return f"{self.content} | {self.user_rating} by {self.username}"
