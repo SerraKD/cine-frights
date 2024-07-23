@@ -21,4 +21,4 @@ class MoviePosts(models.Model):
     excerpt = models.TextField(blank=True)
     imdb_rating = models.IntegerField(blank=False, null=False, default=0)
     rotten_tomatoes_rating = models.SlugField(blank=False, null=False, default=0)
-    # Add our ratings
+    our_rating = models.SlugField(blank=False, null=False, allow_unicode=True, default=0)
