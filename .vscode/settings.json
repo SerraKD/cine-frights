@@ -15,4 +15,12 @@
    "files.autoSave": "off",
    "workbench.colorTheme": "Visual Studio Dark",
    "terminal.integrated.gpuAcceleration": "canvas",
+   "[python]": {
+      "editor.defaultFoldingRangeProvider": "ms-python.pylint",
+      "editor.defaultFormatter": "ms-python.pylint",
+   },
+   "pylint.args": [
+      "\"pylint.args\": [\"load-plugins=pylint_django\"],"
+   ]
+   
 }
