@@ -6,7 +6,7 @@ POST_STATUS = ((0, "Not Published"), (1, "Published"))
 
 # Create your models here.
 
-class MoviePost(models.Model):
+class Movie(models.Model):
     '''Class for movie posts '''
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
@@ -32,7 +32,7 @@ class MoviePost(models.Model):
 class Comment(models.Model):
     '''Class for user comments to the movie posts'''
     post = models.ForeignKey(
-        MoviePost, on_delete=models.CASCADE, related_name="movie_comments")
+        Movie, on_delete=models.CASCADE, related_name="movie_comments")
     username = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="movie_commenter")
     content = models.TextField()

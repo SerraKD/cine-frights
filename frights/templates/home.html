@@ -10,9 +10,9 @@
 
 <body>
     <h1>Movies</h1>
-    {% for movie_post in home_page_view %}
-    <h2>{{movie_post.title}}</h2>
-    <p>{{movie_post.summary}}</p>
-    <p>Our Rating: {{movie_post.our_rating}}</p>
+    {% for movie in home_page_view %}
+    <h2>{{movie.title}}</h2>
+    <p>{{movie.summary}}</p>
+    <p>Our Rating: {{movie.our_rating}}</p>
     {% endfor %}
 </body>
