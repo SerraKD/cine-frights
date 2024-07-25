@@ -1,5 +1,5 @@
 from django.contrib import admin
-from frights.models import Movie, Comment
+from .models import Movie, Comment
 from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(Movie)
