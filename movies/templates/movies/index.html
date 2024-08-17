@@ -16,12 +16,12 @@
                         <div class="card-body">
                             <div class="image-container">
                                 <div class="image-flash">
-                                    <p class="card-title"> {{movie.title}}</p>
+                                    <a href="{% url 'movie_detail' movie.slug %}" class="post-link">
+                                        <h1 class="card-title"> {{movie.title}}</h1>
+                                        <p class="card-title">{{movie.excerpt}}</p>
+                                    </a>
                                 </div>
                             </div>
-                            <a href="#" class="post-link">
-                                <h2 class="card-title">{{movie.excerpt}}</h2>
-                            </a>
 
                             <hr />
                             <p class="card-text text-muted h6">Our Rating: {{movie.our_rating}}
