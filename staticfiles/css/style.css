@@ -1,0 +1,14 @@
+body {
+    background-color: #0f0f0f;
+}
+
+h1,h2,h3,h5 {
+    color: azure;
+    font-family: 'Bebas Neue';
+    letter-spacing: 0.3vh;
+}
+
+p {
+    font-family: 'Pathway Gothic One';
+    letter-spacing: 0.1vh;
+}
