@@ -9,7 +9,7 @@
                 <!-- Post title goes in these h1 tags -->
                 <h1 class="post-title">{{ movie.title }}</h1>
                 <!-- Post author goes before the | the post's created date goes after -->
-                <p class="post-subtitle">{{ movie.title }} | {{ movie.our_rating }}</p>
+                <h5 class="post-subtitle">Our Rating | {{ movie.our_rating }}</h5>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <img src="{% static 'images/default-image.jpg' %}" class="scale" alt="placeholder">
