@@ -6,10 +6,13 @@
     <div class="container">
         <div class="row g-0">
             <div class="col-md-6 masthead-text">
-                <!-- Post title goes in these h1 tags -->
                 <h1 class="post-title">{{ movie.title }}</h1>
-                <!-- Post author goes before the | the post's created date goes after -->
                 <h5 class="post-subtitle">Our Rating | {{ movie.our_rating }}</h5>
+                <div>
+                    <p class="post-subtitle">Imdb | {{movie.imdb_rating}}</p>
+                    <p class="post-subtitle">Rotten Tomatoes | {{movie.rotten_tomatoes_rating}}</p>
+
+                </div>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <img src="{% static 'images/default-image.jpg' %}" class="scale" alt="placeholder">
