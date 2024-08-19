@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'emoji_picker',
     'movies',
+    'films',
 ]
 
 MIDDLEWARE = [
