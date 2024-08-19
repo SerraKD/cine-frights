@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     'django_summernote',
     'cloudinary',
+    'emoji_picker',
     'movies',
 ]
 
