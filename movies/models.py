@@ -1,6 +1,7 @@
 '''Imports'''
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 POST_STATUS = ((0, "Not Published"), (1, "Published"))
 
@@ -13,7 +14,7 @@ class Movie(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="movie_posts"
 )
-    # Add images with claudinary
+    movie_poster = CloudinaryField('image', default='placeholder')
     summary = models.TextField(blank=False, null=False, default="text")
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=POST_STATUS, default=0)
