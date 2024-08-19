@@ -19,7 +19,7 @@
                                 <img class="card-img-top" src="{% static 'images/default-image.jpg' %}"
                                     alt="placeholder image">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="{{ movie.title }}">
+                                <img class="card-img-top" src=" {{ movie.movie_poster.url }}" alt="{{ movie.title }}">
                                 {% endif %}
                                 <div class="image-flash">  
                                 </div>
