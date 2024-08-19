@@ -15,6 +15,7 @@ class Movie(models.Model):
         User, on_delete=models.CASCADE, related_name="movie_posts"
 )
     movie_poster = CloudinaryField('image', default='placeholder')
+    release_date = models.SlugField(blank=False, null=False, default=0, max_length=4)
     summary = models.TextField(blank=False, null=False, default="text")
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=POST_STATUS, default=0)
