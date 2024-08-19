@@ -2,7 +2,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
-from emoji_picker.widgets import EmojiPickerTextInputAdmin, EmojiPickerTextareaAdmin
 
 POST_STATUS = ((0, "Not Published"), (1, "Published"))
 
@@ -23,7 +22,7 @@ class Movie(models.Model):
     excerpt = models.TextField(blank=True)
     imdb_rating = models.TextField(blank=False, null=False, max_length=3, default="0")
     rotten_tomatoes_rating = models.TextField(blank=False, null=False, max_length=3, default="0")
-    our_rating = models.CharField(EmojiPickerTextareaAdmin)
+    our_rating = models.SlugField(blank=False, null=False, allow_unicode=True, default=0)
 
     class Meta:
         '''A meta class for meta data, posts are listed from newest to oldest'''
