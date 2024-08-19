@@ -1,5 +1,8 @@
 from django.shortcuts import render
-from movies.models import HomePageView, MovieDetailView
+from django.http import HttpResponse
+from django.views import generic
+from movies.models import Movie, Comment
+from movies.views import MovieDetailView
 
 
 # Create your views here.
