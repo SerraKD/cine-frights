@@ -16,7 +16,11 @@
                 </div>
             </div>
             <div class="d-none d-md-block col-md-auto">
-                <img src="{% static 'images/default-image.jpg' %}" class="img-fluid" alt="Responsive image">
+                {% if "placeholder" in movie.movie_poster.url %}
+                    <img class="img-fluid" src="{% static 'images/default-image.jpg' %}" alt="placeholder image">
+                {% else %}
+                    <img class="img-fluid" src=" {{ movie.movie_poster.url }}" alt="{{ movie.title }}">
+                {% endif %}
             </div>
         </div>
     </div>
