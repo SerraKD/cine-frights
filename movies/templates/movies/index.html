@@ -15,13 +15,19 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
-                                <div class="image-flash">
-                                    <a href="{% url 'movie_detail' movie.slug %}" class="post-link">
-                                        <h1 class="card-title"> {{movie.title}}</h1>
-                                        <p class="card-title">{{movie.excerpt}}</p>
-                                    </a>
+                                {% if "placeholder" in movie.movie_poster.url %}
+                                <img class="card-img-top" src="{% static 'images/default-image.jpg' %}"
+                                    alt="placeholder image">
+                                {% else %}
+                                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="{{ movie.title }}">
+                                {% endif %}
+                                <div class="image-flash">  
                                 </div>
                             </div>
+                            <a href="{% url 'movie_detail' movie.slug %}" class="post-link">
+                                <h1 class="card-title"> {{movie.title}}</h1>
+                                <p class="card-title">{{movie.excerpt}}</p>
+                            </a>
 
                             <hr />
                             <p class="card-text text-muted h6">Our Rating: {{movie.our_rating}}
