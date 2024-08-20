@@ -8,7 +8,6 @@ class HomePageView(generic.ListView):
     ''' Method to display all movie posts'''
     queryset = Movie.objects.filter(status=1)
     template_name = "movies/index.html"
-    paginate_by = 3
 
 def MovieDetailView(request, slug):
     ''' to display selected movie post details'''
