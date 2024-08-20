@@ -2,16 +2,33 @@ body {
     background-color: #0f0f0f;
 }
 
-h1,h2,h3,h5 {
+h1,
+h2,
+h3,
+h5 {
     color: azure;
     font-family: 'Bebas Neue';
     letter-spacing: 0.3vh;
 }
+
+.brand {
+    font-family: 'Bebas Neue';
+    letter-spacing: 0.6vh;
+    color: #830303;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+#nav-item {
+    font-family: 'Bebas Neue';
+    letter-spacing: 0.1vh;
+}
+
 #movie-title {
     color: azure;
 }
 
-#card-title{
+#card-title {
     color: #c80303;
 }
 
@@ -21,8 +38,11 @@ p {
 }
 
 #page-link {
+    font-family: 'Pathway Gothic One';
     color: #c80303;
     border: 1px solid #c80303;
+    font-weight: 600;
     border-radius: 3px;
     font-weight: 600;
+    letter-spacing: 0.6vh;
 }
