@@ -7,6 +7,13 @@ h1,h2,h3,h5 {
     font-family: 'Bebas Neue';
     letter-spacing: 0.3vh;
 }
+#movie-title {
+    color: azure;
+}
+
+#card-title{
+    color: #c80303;
+}
 
 p {
     font-family: 'Pathway Gothic One';
