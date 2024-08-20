@@ -13,8 +13,9 @@ p {
     letter-spacing: 0.1vh;
 }
 
-.card-title {
+#page-link {
     color: #c80303;
+    border: 1px solid #c80303;
+    border-radius: 3px;
+    font-weight: 600;
 }
-
-
