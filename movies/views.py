@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from django.views import generic
+from django.contrib import messages
 from .models import Movie, Comment
 from .forms import CommentForm
 
@@ -25,6 +26,10 @@ def MovieDetailView(request, slug):
             comment.author = request.user
             comment.post = post
             comment.save()
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Comment submitted, awaiting approval'
+    )
 
     comment_form = CommentForm()
 
