@@ -33,7 +33,7 @@ class Movie(models.Model):
 
 class Comment(models.Model):
     '''Class for user comments to the movie posts'''
-    post = models.ForeignKey(
+    movie = models.ForeignKey(
         Movie, on_delete=models.CASCADE, related_name="movie_comments")
     username = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="movie_comments")
