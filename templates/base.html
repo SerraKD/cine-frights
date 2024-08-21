@@ -69,6 +69,21 @@
             </div>
         </div>
     </nav>
+    <!-- displays Django messages -->
+    <div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+        {% for message in messages %}
+        <div class="alert {{ message.tags }} alert-dismissible
+            fade show" id="msg" role="alert" style="color:azure">
+            {{ message | safe }}
+            <button type="button" class="btn-close"
+            data-bs-dismiss="alert" aria-label="Close" style="color:azure; background-color:#830303;"></button>
+        </div>
+        {% endfor %}
+        </div>
+    </div>
+    </div>
     <main class="flex-shrink-0 main-bg">
         {% if user.is_authenticated %}
         <p class="text-end m-3" style="color:azure;">Logged in as {{ user }}</p>
