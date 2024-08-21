@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from django.views import generic
 from .models import Movie, Comment
+from .forms import CommentForm
 
 # Create your views here.
 class HomePageView(generic.ListView):
@@ -16,6 +17,7 @@ def MovieDetailView(request, slug):
     comments = Comment.objects.all().order_by("-created_on")
     comment_count = Comment.objects.filter(approved=True).count()
     movie.movie_comments.filter(approved=True).count()
+    comment_form = CommentForm()
 
     return render(
     request,
@@ -24,6 +26,7 @@ def MovieDetailView(request, slug):
         "movie": movie,
         "comments": comments,
         "comment_count": comment_count,
+        "comment_form": comment_form,
     },
 )
 
