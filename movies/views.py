@@ -28,7 +28,7 @@ def MovieDetailView(request, slug):
             comment.save()
             messages.add_message(
                 request, messages.SUCCESS,
-                'Comment submitted, awaiting approval'
+                'Your comment is successfully submitted, will appear after approval'
     )
 
     comment_form = CommentForm()
