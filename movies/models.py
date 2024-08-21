@@ -33,10 +33,10 @@ class Movie(models.Model):
 
 class Comment(models.Model):
     '''Class for user comments to the movie posts'''
-    movie = models.ForeignKey(
+    post = models.ForeignKey(
         Movie, on_delete=models.CASCADE, related_name="movie_comments")
     username = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="movie_commenter")
+        User, on_delete=models.CASCADE, related_name="movie_comments")
     content = models.TextField()
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
