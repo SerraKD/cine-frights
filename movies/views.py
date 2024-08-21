@@ -24,7 +24,7 @@ def MovieDetailView(request, slug):
         if comment_form.is_valid():
             comment = comment_form.save(commit=False)
             comment.username = request.user
-            comment.post = movie
+            comment.movie = movie
             comment.save()
             messages.add_message(
                 request, messages.SUCCESS,
