@@ -17,6 +17,15 @@ def MovieDetailView(request, slug):
     comments = Comment.objects.all().order_by("-created_on")
     comment_count = Comment.objects.filter(approved=True).count()
     movie.movie_comments.filter(approved=True).count()
+    
+    if request.method == "POST":
+        comment_form = CommentForm(data=request.POST)
+        if comment_form.is_valid():
+            comment = comment_form.save(commit=False)
+            comment.author = request.user
+            comment.post = post
+            comment.save()
+
     comment_form = CommentForm()
 
     return render(
