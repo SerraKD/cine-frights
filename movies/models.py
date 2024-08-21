@@ -22,7 +22,7 @@ class Movie(models.Model):
     excerpt = models.TextField(blank=True)
     imdb_rating = models.TextField(blank=False, null=False, max_length=3, default="0")
     rotten_tomatoes_rating = models.TextField(blank=False, null=False, max_length=3, default="0")
-    our_rating = models.TextField(blank=False, null=False,  max_length=5, default="0")
+    our_rating = models.TextField(blank=False, null=False,  max_length=26, default="0")
 
     class Meta:
         '''A meta class for meta data, posts are listed from newest to oldest'''
