@@ -70,6 +70,11 @@
         </div>
     </nav>
     <main class="flex-shrink-0 main-bg">
+        {% if user.is_authenticated %}
+        <p class="text-end m-3" style="color:azure;">Logged in as {{ user }}</p>
+        {% else %}
+        <p class="text-end m-3" style="color:azure;">You are not logged in</p>
+        {% endif %}
 
         {% block content %}
         <!-- Content Goes here -->
