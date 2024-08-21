@@ -38,6 +38,39 @@
             </div>
         </div>
     </div>
+  
+  <!-- Displaying Comments -->
+  <div class="row">
+    <div class="col-md-8 card mb-4  mt-3 ">
+      <h3 style="color: black;">Comments: {{ comment_count }}</h3>
+      <div class="card-body">
+        <!-- for loop to iterate through each comment in comments -->
+        {% for comment in comments %}
+        <div class="p-2 comments
+          {% if not comment.approved and comment.author == user %}
+          faded{% elif not comment.approved %} d-none{% endif %}">
+          <p  style="color: black;" class="font-weight-bold">
+            {{ comment.username }}
+            <span style="color: black;" class="font-weight-normal">
+              {{ comment.created_on }}
+            </span> wrote:
+          </p>
+          <div style="color: black;" id="comment{{ comment.id }}">
+            {{ comment.content | linebreaks }}
+          <p style="color: black;">Rated:{{ comment.user_rating }}</p>
+          </div>
+          {% if not comment.approved and comment.author == user %}
+          <p  style="color: black;" class="approval">
+            This comment is awaiting approval
+          </p>
+          {% endif %}
+        </div>
+        <!-- for loop ends here -->
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+    
 </div>
 
 {% endblock content %}
