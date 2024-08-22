@@ -1,124 +1,121 @@
 {% extends 'base.html' %}
 {% block content %}
-    {% load static %}
-    {% load crispy_forms_tags %}
+{% load static %}
+{% load crispy_forms_tags %}
 
-    <div class="masthead">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-md-6 masthead-text">
-                    <h1 class="post-title" id="movie-title">{{ movie.title }}</h1>
-                    <h5 class="post-subtitle" id="movie-title">Our Rating |
-                        {{ movie.our_rating }}</h5>
-                    <div>
-                        <p class="post-subtitle" id="movie-title">Imdb |
-                            {{ movie.imdb_rating }}</p>
-                        <p class="post-subtitle" id="movie-title">Rotten Tomatoes |
-                            {{ movie.rotten_tomatoes_rating }}</p>
-                        <p class="post-subtitle" id="movie-title">Release Date |
-                            {{ movie.release_date }}</p>
+<div class="masthead">
+  <div class="container">
+    <div class="row g-0">
+      <div class="col-md-6 masthead-text">
+        <h1 class="post-title" id="movie-title">{{ movie.title }}</h1>
+        <h5 class="post-subtitle" id="movie-title">Our Rating |
+          {{ movie.our_rating }}</h5>
+        <div>
+          <p class="post-subtitle" id="movie-title">Imdb |
+            {{ movie.imdb_rating }}</p>
+          <p class="post-subtitle" id="movie-title">Rotten Tomatoes |
+            {{ movie.rotten_tomatoes_rating }}</p>
+          <p class="post-subtitle" id="movie-title">Release Date |
+            {{ movie.release_date }}</p>
 
-                    </div>
-                </div>
-                <div class="d-none d-md-block col-md-auto">
-                    {% if "placeholder" in movie.movie_poster.url %}
-                        <img class="img-fluid" src="{% static 'images/default-image.jpg' %}" alt="placeholder image">
-                        {% else %}
-                            <img class="img-fluid" src=" {{ movie.movie_poster.url }}" alt="{{ movie.title }}">
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
+      </div>
+      <div class="d-none d-md-block col-md-auto">
+        {% if "placeholder" in movie.movie_poster.url %}
+        <img class="img-fluid" src="{% static 'images/default-image.jpg' %}" alt="placeholder image">
+        {% else %}
+        <img class="img-fluid" src=" {{ movie.movie_poster.url }}" alt="{{ movie.title }}">
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col card mb-4  mt-3 left  top">
-                        <div class="card-body">
-                            <!-- The post content goes inside the card-text. -->
-                            <!-- Use the | safe filter inside the template tags -->
-                                <p class="card-text"> {{ movie.summary | safe }}
-                            </p>
-                        </div>
-                    </div>
-                </div>
+<div class="container">
+  <div class="row">
+    <div class="col card mb-4  mt-3 left  top">
+      <div class="card-body">
+        <!-- The post content goes inside the card-text. -->
+        <!-- Use the | safe filter inside the template tags -->
+        <p class="card-text"> {{ movie.summary | safe }}
+        </p>
+      </div>
+    </div>
+  </div>
 
-                <!-- Displaying Comments -->
-                <div class="row">
-                    <div class="col-md-8 card mb-4  mt-3 ">
-                        <h3 style="color: black;">Comments:
-                            {{ comment_count }}</h3>
-                        <div
-                            class="card-body">
-                            <!-- for loop to iterate through each comment in comments -->
-                            {% for comment in comments %}
-                                <div class="p-2 comments
-                                                                                          {% if not comment.approved and comment.username == user %}
-                                                                                          faded{% elif not comment.approved %} d-none{% endif %}">
-                                    <p style="color: black;" class="font-weight-bold">
-                                        {{ comment.username }}
-                                        <span style="color: black;" class="font-weight-normal">
-                                            {{ comment.created_on }}
-                                        </span>
-                                        wrote:
-                                    </p>
-                                    <div style="color: black;" id="comment{{ comment.id }}">
-                                        {{ comment.content | linebreaks }}
-                                        <p style="color: black;">Rated:{{ comment.user_rating }}</p>
-                                    </div>
-                                    {% if not comment.approved and comment.username == user %}
-                                        <p style="color: #830303;" class="approval">This comment is awaiting approval</p>
-                                    {% endif %}
-                                    {% if user.is_authenticated and comment.username == user %}
-                                        <button class="btn btn-edit" comment_id="{{ comment.id }}" style="color:azure; background-color:#830303;">Edit</button>
-                                        <button class="btn btn-delete" comment_id="{{ comment.id }}" style="color: #830303;">Delete</button>
-                                    {% endif %}
-                                </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                    <!-- To create new comments -->
-                    <div class="col-md-4 card mb-4 mt-3">
-                        <div class="card-body">
-                            {% if user.is_authenticated %}
-                                <h3 style="color:black;">Leave a comment:</h3>
-                                <p>Posting as:
-                                    {{ user.username }}</p>
-                                <form id="commentForm" method="post" style="margin-top: 1.3em;">
-                                    {{ comment_form | crispy }}
-                                    {% csrf_token %}
-                                    <button id="submitButton" type="submit" class="btn btn-signup btn-lg" style="color:azure; background-color:#830303;">Submit</button>
-                                </form>
-                            {% else %}
-                                <p style="color:#830303;">Log in to leave a comment</p>
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Delete confirmation modal -->
-            <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="deleteModalLabel">Delete comment?</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="color:#830303;">
-                            Are you sure you want to delete your comment?
-                                                                This action cannot be undone.
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <a id="deleteConfirm" href="#" class="btn
+  <!-- Displaying Comments -->
+  <div class="row">
+    <div class="col-md-8 card mb-4  mt-3 ">
+      <h3 style="color: black;">Comments:
+        {{ comment_count }}</h3>
+      <div class="card-body">
+        <!-- for loop to iterate through each comment in comments -->
+        {% for comment in comments %}
+        <div
+          class="p-2 comments{% if not comment.approved and comment.username == user %} faded{% elif not comment.approved %} d-none{% endif %}">
+          <p style="color: black;" class="font-weight-bold">
+            {{ comment.username }}
+            <span style="color: black;" class="font-weight-normal">
+              {{ comment.created_on }}
+            </span> wrote:
+          </p>
+          <div style="color: black;" id="comment{{ comment.id }}">
+            {{ comment.content | linebreaks }}
+          </div>
+          {% if not comment.approved and comment.username == user %}
+          <p style="color: #830303;" class="approval">This comment is awaiting approval</p>
+          {% endif %}
+          {% if user.is_authenticated and comment.username == user %}
+          <button class="btn btn-edit" comment_id="{{ comment.id }}" style="color:azure; background-color:#830303;">Edit</button>
+          <button class="btn btn-delete" comment_id="{{ comment.id }}" style="color: #830303;">Delete</button>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <!-- To create new comments -->
+    <div class="col-md-4 card mb-4 mt-3">
+      <div class="card-body">
+        {% if user.is_authenticated %}
+        <h3 style="color:black;">Leave a comment:</h3>
+        <p>Posting as:
+          {{ user.username }}</p>
+        <form id="commentForm" method="post" style="margin-top: 1.3em;">
+          {{ comment_form | crispy }}
+          {% csrf_token %}
+          <button id="submitButton" type="submit" class="btn btn-signup btn-lg"
+            style="color:azure; background-color:#830303;">Submit</button>
+        </form>
+        {% else %}
+        <p style="color:#830303;">Log in to leave a comment</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Delete confirmation modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteModalLabel">Delete comment?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="color:#830303;">
+        Are you sure you want to delete your comment?
+        This action cannot be undone.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a id="deleteConfirm" href="#" class="btn
                                                                           btn-danger">Delete</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-        {% endblock content %}
+{% endblock content %}
 
-        {% block extras %}
-            <script src="{% static 'js/comments.js' %}"></script>
-        {% endblock %}
+{% block extras %}
+<script src="{% static 'js/comments.js' %}"></script>
+{% endblock %}
