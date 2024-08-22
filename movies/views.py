@@ -67,3 +67,18 @@ def comment_edit(request, slug, comment_id):
 
     return HttpResponseRedirect(reverse('movie_detail', args=[slug]))
 
+def comment_delete(request, slug, comment_id):
+    """
+    view to delete movie comments
+    """
+    queryset = Movie.objects.filter(status=1)
+    movie = get_object_or_404(queryset, slug=slug)
+    comment = get_object_or_404(Comment, pk=comment_id)
+
+    if comment.username == request.user:
+        comment.delete()
+        messages.add_message(request, messages.SUCCESS, 'Comment deleted.')
+    else:
+        messages.add_message(request, messages.ERROR, 'You can only delete your own comments.')
+
+    return HttpResponseRedirect(reverse('movie_detail', args=[slug]))
