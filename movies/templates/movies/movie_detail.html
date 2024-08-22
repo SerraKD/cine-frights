@@ -48,7 +48,7 @@
         <!-- for loop to iterate through each comment in comments -->
         {% for comment in comments %}
         <div class="p-2 comments
-          {% if not comment.approved and comment.author == user %}
+          {% if not comment.approved and comment.username == user %}
           faded{% elif not comment.approved %} d-none{% endif %}">
           <p  style="color: black;" class="font-weight-bold">
             {{ comment.username }}
@@ -58,15 +58,15 @@
           </p>
           <div style="color: black;" id="comment{{ comment.id }}">
             {{ comment.content | linebreaks }}
-          <p style="color: black;">Rated:{{ comment.user_rating }}</p>
+            <p style="color: black;">Rated:{{ comment.user_rating }}</p>
           </div>
           {% if not comment.approved and comment.username == user %}
-          <p  style="color: black;" class="approval">
-            This comment is awaiting approval
-          </p>
+          <p  style="color: #830303;" class="approval">This comment is awaiting approval</p>
+          {% endif %}
+          {% if user.is_authenticated and comment.username == user %}
+          <button class="btn btn-edit" comment_id="{{ comment.id }}" style="color:azure; background-color:#830303;">Edit</button>
           {% endif %}
         </div>
-        <!-- for loop ends here -->
         {% endfor %}
       </div>
     </div>
