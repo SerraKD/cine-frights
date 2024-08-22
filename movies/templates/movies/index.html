@@ -22,10 +22,9 @@
                         {% else %}
                             <img class="d-block w-100" src="{{ movie.movie_poster.url }}" alt="{{movie.title}}">
                         {% endif %}
-                        <div class="carousel-caption d-none d-md-block">
-                            <a href="{% url 'movie_detail' movie.slug %}"></a>
-                                <h5 id="movie-title">{{ movie.title }}</h5>
-                                <p>{{ movie.summary }}</p>
+                        <div style="background-color: black;" class="carousel-caption d-none d-md-block">
+                            <a href="{% url 'movie_detail' movie.slug %}"><h5 id="movie-title">{{ movie.title }}</h5></a>
+                            <p>{{ movie.summary }}</p>
                         </div>
                         </div>
                     {% else %}
@@ -35,8 +34,8 @@
                         {% else %}
                             <img class="d-block w-100" src="{{ movie.movie_poster.url }}" alt="{{movie.title}}">
                         {% endif %}
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 id="movie-title">{{ movie.title }}</h5>
+                            <div  style="background-color: black;" class="carousel-caption d-none d-md-block">
+                                <a href="{% url 'movie_detail' movie.slug %}"><h5 id="movie-title">{{ movie.title }}</h5></a>
                                 <p>{{ movie.summary }}</p>
                             </div>
                         </div>
