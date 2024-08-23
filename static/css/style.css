@@ -62,6 +62,17 @@ p {
     letter-spacing: 0.1vh;
 }
 
+/** Styles delete comment modal **/
+.modal-content {
+    color: #830303;
+    font-family: 'Pathway Gothic One';
+    letter-spacing: 0.1vh;
+}
+
+.modal-content h5 {
+    color: #830303;
+}
+
 #page-link {
     font-family: 'Pathway Gothic One';
     color: #c80303;
