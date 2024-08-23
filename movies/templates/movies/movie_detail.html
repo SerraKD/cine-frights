@@ -66,8 +66,8 @@
           <p style="color: #830303;" class="approval">This comment is awaiting approval</p>
           {% endif %}
           {% if user.is_authenticated and comment.username == user %}
-          <button class="btn btn-edit" comment_id="{{ comment.id }}" style="color:azure; background-color:#830303;">Edit</button>
-          <button class="btn btn-delete" comment_id="{{ comment.id }}" style="color: #830303;">Delete</button>
+          <button class="btn btn-edit" comment_id="{{ comment.id }}">Edit</button>
+          <button class="btn btn-delete" comment_id="{{ comment.id }}">Delete</button>
           {% endif %}
         </div>
         {% endfor %}
@@ -83,8 +83,7 @@
         <form id="commentForm" method="post" style="margin-top: 1.3em;">
           {{ comment_form | crispy }}
           {% csrf_token %}
-          <button id="submitButton" type="submit" class="btn btn-signup btn-lg"
-            style="color:azure; background-color:#830303;">Submit</button>
+          <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
         </form>
         {% else %}
         <p style="color:#830303;">Log in to leave a comment</p>
