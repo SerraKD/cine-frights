@@ -39,6 +39,8 @@ h5 {
 .card-body {
     background-color: #ffffff;
     color: 0f0f0f;
+    padding: 10px 10px;
+    border-radius: 5px;
 }
 
 /** Styles movie comments **/
@@ -53,6 +55,7 @@ h5 {
 .approval {
     color: #830303;
 }
+
 
 p {
     font-family: 'Pathway Gothic One';
