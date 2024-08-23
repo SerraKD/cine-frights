@@ -41,6 +41,19 @@ h5 {
     color: 0f0f0f;
 }
 
+/** Styles movie comments **/
+.card {
+    color: #0f0f0f;
+}
+
+.card h3 {
+    color: #0f0f0f;
+}
+
+.approval {
+    color: #830303;
+}
+
 p {
     font-family: 'Pathway Gothic One';
     letter-spacing: 0.1vh;
