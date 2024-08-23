@@ -24,24 +24,23 @@
         </div>
       <!-- Displaying Comments -->
       <div class="card mb-4  mt-3">
-        <h3 style="color: black;">Comments:
-          {{ comment_count }}</h3>
+        <h3>Comments: {{ comment_count }}</h3>
         <div class="card-body">
           <!-- for loop to iterate through each comment in comments -->
           {% for comment in comments %}
           <div
             class="p-2 comments{% if not comment.approved and comment.username == user %} faded{% elif not comment.approved %} d-none{% endif %}">
-            <p style="color: black;" class="font-weight-bold">
+            <p class="font-weight-bold">
               {{ comment.username }}
-              <span style="color: black;" class="font-weight-normal">
+              <span class="font-weight-normal">
                 {{ comment.created_on }}
               </span> wrote:
             </p>
-            <div style="color: black;" id="comment{{ comment.id }}">
+            <div id="comment{{ comment.id }}">
               {{ comment.content | linebreaks }}
             </div>
             {% if not comment.approved and comment.username == user %}
-            <p style="color: #830303;" class="approval">This comment is awaiting approval</p>
+            <p class="approval">This comment is awaiting approval</p>
             {% endif %}
             {% if user.is_authenticated and comment.username == user %}
             <button class="btn btn-edit" comment_id="{{ comment.id }}">Edit</button>
@@ -53,16 +52,15 @@
       <!-- To create new comments -->
         <div class="card-body">
           {% if user.is_authenticated %}
-          <h3 style="color:black;">Leave a comment:</h3>
-          <p>Posting as:
-            {{ user.username }}</p>
+          <h3>Leave a comment:</h3>
+          <p>Posting as: {{ user.username }}</p>
           <form id="commentForm" method="post" style="margin-top: 1.3em;">
             {{ comment_form | crispy }}
             {% csrf_token %}
             <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
           </form>
           {% else %}
-          <p style="color:#830303;">Log in to leave a comment</p>
+          <p>Log in to leave a comment</p>
           {% endif %}
         </div>
       </div>
