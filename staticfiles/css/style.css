@@ -35,9 +35,42 @@ h5 {
     color: #c80303;
 }
 
+/** Styles movie summary card **/
+.card-body {
+    background-color: #ffffff;
+    color: 0f0f0f;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+/** Styles movie comments **/
+.card {
+    color: #0f0f0f;
+}
+
+.card h3 {
+    color: #0f0f0f;
+}
+
+.approval {
+    color: #830303;
+}
+
+
 p {
     font-family: 'Pathway Gothic One';
     letter-spacing: 0.1vh;
+}
+
+/** Styles delete comment modal **/
+.modal-content {
+    color: #830303;
+    font-family: 'Pathway Gothic One';
+    letter-spacing: 0.1vh;
+}
+
+.modal-content h5 {
+    color: #830303;
 }
 
 #page-link {
@@ -48,4 +81,16 @@ p {
     border-radius: 3px;
     font-weight: 600;
     letter-spacing: 0.6vh;
+}
+
+/** Styling for edit, delete, modal buttons  **/
+.btn-edit,
+.btn-delete,
+.btn-close,
+.btn {
+    color: azure;
+    background-color: #830303;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    font-size: 90%;
 }
