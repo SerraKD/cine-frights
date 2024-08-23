@@ -51,23 +51,25 @@
             {% endfor %}
           </div>
           <!-- To create new comments -->
-          <div class="card-body">
-            {% if user.is_authenticated %}
-            <h3>Leave a comment:</h3>
-            <p>Posting as: {{ user.username }}</p>
-            <form id="commentForm" method="post" style="margin-top: 1.3em;">
-              {{ comment_form | crispy }}
-              {% csrf_token %}
-              <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
-            </form>
-            {% else %}
-            <p>Log in to leave a comment</p>
-            {% endif %}
+          <div class="card mb-3  mt-3 ">
+            <div class="card-body">
+              {% if user.is_authenticated %}
+              <h3>Leave a comment:</h3>
+              <p>Posting as: {{ user.username }}</p>
+              <form id="commentForm" method="post" style="margin-top: 1.3em;">
+                {{ comment_form | crispy }}
+                {% csrf_token %}
+                <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
+              </form>
+              {% else %}
+              <p>Log in to leave a comment</p>
+              {% endif %}
+            </div>
           </div>
         </div>
     </div>
     <!-- The movie post poster -->
-    <div class="d-none d-md-block col-md-4 col-lg-6">
+    <div class="d-none d-md-block col-md-6 col-lg-6">
       {% if "placeholder" in movie.movie_poster.url %}
       <img class="img-fluid w-100" src="{% static 'images/default-image.jpg' %}" alt="placeholder image">
       {% else %}
