@@ -35,6 +35,12 @@ h5 {
     color: #c80303;
 }
 
+/** Styles movie summary card **/
+.card-body {
+    background-color: #ffffff;
+    color: 0f0f0f;
+}
+
 p {
     font-family: 'Pathway Gothic One';
     letter-spacing: 0.1vh;
