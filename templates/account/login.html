@@ -9,17 +9,17 @@
 {% block content %}
 
 <!-- https://github.com/Code-Institute-Solutions/blog/blob/main/11_authorisation/01_allauth/templates/account/login.html -->
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
+<div class="container d-flex flex-column">
+    <div class="flex-column ">
+        <div class="col-md-8 mt-3 offset-md-2 p-2">
             <h3>{% trans "Login" %}</h3>
 
             <p style="color:azure;">{% blocktrans %}Please log in to leave a comment or to rate movies. If
-                you don't have an account, you can <a class="link" href="{{ signup_url }}">sign up</a>{% endblocktrans %}</p>
+                you don't have an account, you can <a class="link-danger" href="{{ signup_url }}">sign up</a>{% endblocktrans %}</p>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
+    <div class="flex-column">
+        <div class="col-md-8 mt-3 offset-md-2 p-2 ">
             <form style="color:azure;" class="login" method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
                 {{ form.as_p }}
