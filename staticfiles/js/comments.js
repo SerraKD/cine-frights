@@ -1,6 +1,6 @@
 /*  edit and delete comment buttons */
 const editButtons = document.getElementsByClassName("btn-edit");
-const commentText = document.getElementById("id_body");
+const commentText = document.getElementById("id_content");
 const commentForm = document.getElementById("commentForm");
 const submitButton = document.getElementById("submitButton");
 const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
