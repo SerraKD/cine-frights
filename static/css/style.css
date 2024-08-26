@@ -57,6 +57,13 @@ p#movie-summary {
     border-radius: 5px;
 }
 
+#detail-card {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
 /** Styles movie comments **/
 .card {
     color: #0f0f0f;
