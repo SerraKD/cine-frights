@@ -51,8 +51,8 @@ class RecommendMovie(models.Model):
     ''' Class for users to recommend a movie to be featured on the site '''
     username = models.CharField(max_length=200)
     email = models.EmailField()
-    movie_title = models.TextField()
-    additional_comments = models.TextField()
+    movie_title = models.TextField(max_length=200)
+    additional_comments = models.TextField(max_length=200)
     read = models.BooleanField(default=False)
 
     def __str__(self):
