@@ -3,10 +3,9 @@ from django.http import HttpResponse
 from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
-from .models import Movie, Comment
-from .forms import CommentForm
+from .models import Movie, Comment, RecommendMovie
+from .forms import CommentForm, RecommendMovieForm
 
-# Create your views here.
 class HomePageView(generic.ListView):
     ''' Method to display all movie posts'''
     queryset = Movie.objects.filter(status=1)
@@ -44,6 +43,26 @@ def MovieDetailView(request, slug):
         "comment_form": comment_form,
     },
 )
+            
+def recommend_view(request):
+    '''to display recommend movie form'''
+    
+    if request.method == "POST":
+        recommend_movie_form = RecommendMovieForm(data=request.POST)
+        if recommend_movie_form.is_valid():
+            recommend_movie_form.save()
+            messages.add_message(request, messages.SUCCESS, "Thank you,we recieved your recommendation. You will get an respond within a week.")
+
+    recommend_movie_form = RecommendMovieForm()
+
+    return render(
+        request,
+        "movies/recommend_movie.html",
+        {
+            "recommend_movie_form": recommend_movie_form
+        },
+    )
+
 
 def comment_edit(request, slug, comment_id):
     """
