@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Movie, Comment
+from .models import Movie, Comment, RecommendMovie
 from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(Movie)
@@ -11,5 +11,10 @@ class MoviePostAdmin(SummernoteModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
     summernote_fields = ('summary',)
 
-# Register your models here.
 admin.site.register(Comment)
+
+@admin.register(RecommendMovie)
+class RecommendMovieAdmin(admin.ModelAdmin):
+    '''Registers movie recommendations to admin'''
+
+    list_display = ('movie_title', 'additional_comments', 'read',)
