@@ -40,12 +40,11 @@ class Comment(models.Model):
     content = models.TextField()
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
-    user_rating = models.IntegerField(default=0)
     class Meta:
         '''A meta class for meta data, comments are listed from newest to oldest'''
         ordering = ["-created_on"]
     def __str__(self):
-        return f"{self.content} | {self.user_rating} by {self.username}"
+        return f"{self.content} | by {self.username}"
 
 class RecommendMovie(models.Model):
     ''' Class for users to recommend a movie to be featured on the site '''
