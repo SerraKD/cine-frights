@@ -46,3 +46,14 @@ class Comment(models.Model):
         ordering = ["-created_on"]
     def __str__(self):
         return f"{self.content} | {self.user_rating} by {self.username}"
+
+class RecommendMovie(models.Model):
+    ''' Class for users to recommend a movie to be featured on the site '''
+    username = models.CharField(max_length=200)
+    email = models.EmailField()
+    movie_title = models.TextField()
+    additional_comments = models.TextField()
+    read = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f"Movie recommendation from {self.username}"
