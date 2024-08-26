@@ -24,7 +24,7 @@
                         {% endif %}
                         <div style="background-color: black;" class="carousel-caption d-none d-md-block">
                             <a href="{% url 'movie_detail' movie.slug %}"><h5 id="movie-title">{{ movie.title }}</h5></a>
-                            <p>{{ movie.summary }}</p>
+                            <p>{{ movie.excerpt }}</p>
                         </div>
                         </div>
                     {% else %}
@@ -36,7 +36,7 @@
                         {% endif %}
                             <div  style="background-color: black;" class="carousel-caption d-none d-md-block">
                                 <a href="{% url 'movie_detail' movie.slug %}"><h5 id="movie-title">{{ movie.title }}</h5></a>
-                                <p>{{ movie.summary }}</p>
+                                <p>{{ movie.excerpt }}</p>
                             </div>
                         </div>
                     {% endif %}
