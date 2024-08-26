@@ -85,6 +85,18 @@ p {
     letter-spacing: 0.6vh;
 }
 
+/** Styles movie carousel **/
+.carousel-caption.d-none.d-md-block {
+    max-height: 11vh;
+
+}
+
+#carousel-caption {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: black;
+}
+
 /** Styles movie recommendation form **/
 p.recommend {
     color: azure;
