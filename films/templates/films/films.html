@@ -13,7 +13,7 @@
                 {% for movie in object_list%}
                 <div class="col-md-4">
                     <div class="card mb-4">
-                        <div class="card-body" id="detail-card"> 
+                        <div class="card-body"> 
                             <div class="image-container">
                                 {% if "placeholder" in movie.movie_poster.url %}
                                 <img class="card-img-top" src="{% static 'images/default-image.jpg' %}"
