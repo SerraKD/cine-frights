@@ -94,6 +94,10 @@ p.recommend {
     color: azure;
 }
 
+textarea#id_movie_title {
+    max-height: calc(1.5em + .75rem + 2px);
+}
+
 /** Styling for edit, delete, modal buttons  **/
 .btn-edit,
 .btn-delete,
