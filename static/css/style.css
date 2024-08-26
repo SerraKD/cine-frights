@@ -28,18 +28,32 @@ h5 {
     letter-spacing: 0.1vh;
 }
 
-#movie-title {
-    color: azure;
-}
-
 #card-title {
     color: #c80303;
 }
 
+/** Styles film page movie links **/
+a.post-link {
+    color: #c80303;
+    text-decoration: none;
+}
+
+#movie-title {
+    color: azure;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+p#movie-summary {
+    color: #5e0101;
+    text-decoration: none;
+}
+
 /** Styles movie summary card **/
+
 .card-body {
-    background-color: #ffffff;
-    color: 0f0f0f;
+    background-color: rgba(0, 0, 0, 0.125);
+    color: black;
     padding: 10px 10px;
     border-radius: 5px;
 }
@@ -81,7 +95,6 @@ p {
     border: 1px solid #c80303;
     font-weight: 600;
     border-radius: 3px;
-    font-weight: 600;
     letter-spacing: 0.6vh;
 }
 
@@ -94,7 +107,8 @@ p {
 #carousel-caption {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: black;
+    font-size: medium;
+    text-decoration: none;
 }
 
 /** Styles movie recommendation form **/
