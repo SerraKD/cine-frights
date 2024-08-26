@@ -85,6 +85,15 @@ p {
     letter-spacing: 0.6vh;
 }
 
+/** Styles movie recommendation form **/
+p.recommend {
+    color: azure;
+}
+
+.form-label {
+    color: azure;
+}
+
 /** Styling for edit, delete, modal buttons  **/
 .btn-edit,
 .btn-delete,
