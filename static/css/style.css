@@ -40,7 +40,6 @@ a.post-link {
 
 #movie-title {
     color: azure;
-    font-size: xx-large;
     text-decoration: none;
 }
 
@@ -108,6 +107,12 @@ p {
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-size: medium;
+    text-decoration: none;
+}
+
+#carousel-title {
+    color: azure;
+    font-size: xx-large;
     text-decoration: none;
 }
 
