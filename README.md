@@ -156,6 +156,22 @@ I created 12 user stories with MoSCoW prioritization technique. Every user story
 ---
 
 ## Design
+
+### Wire-frames
+
+In the planning stage, I used Balsamiq wireframes to create the basic layout of the website. Views of the pages change depending on if the user is signed in. The final design evolved more to fit to horror theme.
+
+| Page  | Wireframe |
+| :----: | :----: |
+| Home | ![Home Page wireframe image](docs/wireframes/home-wireframe.png) |
+| Home Signed in | ![Home Page signed in user wireframe image](docs/wireframes/signedin-home-wireframe.png) |
+| Films | ![Films Page wireframe image](docs/wireframes/films-wireframe.png) |
+| Films Signed in | ![Films Page signed in user wireframe image](docs/wireframes/signedin-films-wireframe.png) |
+| Movie Detail | ![Movie Detail Page wireframe image](docs/wireframes/movie-detail-wireframe.png) |
+| Movie Detail Signed in | ![Movie Detail signed in user wireframe image](docs/wireframes/signedin-movie-detail-wireframe.png) |
+| Sign In | ![Sign In Page wireframe image](docs/wireframes/sign-wireframe.png) |
+| Login | ![Login Page wireframe image](docs/wireframes/login-wireframe.png) |
+
 ## Features
 ## Validation, Testing & Bugs
 ## Deployment
