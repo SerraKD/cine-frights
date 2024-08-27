@@ -42,21 +42,28 @@ def MembersView(request):
 
 def Remove(request):
     '''to display unsubscribe the newsletter form'''
-    remove = Member.objects.get(data=request.GET)
-    if request.method == "GET":
-        remove.delete()
-        messages.add_message(
-            request, messages.SUCCESS,
-            'You have succesfully unsubscribed to our Newsletter'
-        )
-    else:
-        messages.add_message(
-            request, messages.SUCCESS,
-            'You have already unsubscribed to newsletter with this email.'
-        )
+    if request.method == "POST":
+        member_form = MemberForm(data=request.POST)
+        if member_form .is_valid():
+            email_delete = member_form.cleaned_data["email"]
+            remove = Member.objects.get(email=email_delete)
+            remove.delete()
+            messages.add_message(
+                request, messages.SUCCESS,
+                'You have succesfully unsubscribed to our Newsletter'
+            )
+        else:
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Request failed, please check the email provided.'
+            )
 
-    
+    member_form = MemberForm()
+
     return render(
         request,
         "films/newsletter.html",
+        {
+            "member_form": member_form
+        },
     )
