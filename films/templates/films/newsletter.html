@@ -6,14 +6,23 @@
 
 <div class="container mt-5">
     <div class="row justify-content-center">
-        <div class="col-12 col-md-6 my-5">
+        <div class="col-6 col-md-6 my-5">
         <h2>Do you want to stay updated for the newest frights?</h2>
         <p class="subscribe">Subscribe to our newsletter.</p>
 
         <form method="post">
-            {{ newsletter_form | crispy }}
+            {{ member_form | crispy }}
             {% csrf_token %}
             <button class="btn btn-secondary" type="submit">Subscribe</button>
+        </form>
+        <div class="col-6 col-md-6 my-5">
+        <h2>Do you want to unsubscribe?</h2>
+        <p class="subscribe">Enter your email below.</p>
+
+        <form method="get">
+            {{ member_form | crispy }}
+            {% csrf_token %}
+            <button class="btn btn-secondary" type="submit">Unsubscribe</button>
         </form>
     </div>
 </div>
