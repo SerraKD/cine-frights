@@ -127,6 +127,15 @@ a {
     text-decoration: none;
 }
 
+.row.p-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    background-color: white;
+}
+
 /** Styles movie recommendation form **/
 p.recommend {
     color: azure;
@@ -138,6 +147,12 @@ p.recommend {
 
 textarea#id_movie_title {
     max-height: calc(1.5em + .75rem + 2px);
+}
+
+/** Styles newsletter  **/
+
+p.subscribe {
+    color: azure;
 }
 
 /** Styling for edit, delete, modal buttons  **/
