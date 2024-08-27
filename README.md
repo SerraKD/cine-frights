@@ -163,6 +163,12 @@ I created 12 user stories with MoSCoW prioritization technique. Every user story
 
 ![Color scheme image](docs/color-scheme.png)
 
+### Typography
+
+I selected Pathway Gothic One and Bebas Neue fonts from Google fonts. The dramatic feel of Bebas Neue font fits the site headings and movie titles perfectly.
+
+![Fonts image](docs/fonts-image.png)
+
 ### Wire-frames
 
 In the planning stage, I used Balsamiq wireframes to create the basic layout of the website. Views of the pages change depending on if the user is signed in. The final design evolved more to fit to horror theme.
