@@ -166,3 +166,11 @@ p.subscribe {
     padding: 5px 10px;
     font-size: 90%;
 }
+
+/** Media query: Tablets and larger (768px and up) **/
+@media screen and (min-width: 768px) {
+    .row.p-2 {
+        max-height: 500vh;
+    }
+
+}
