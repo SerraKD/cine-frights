@@ -1,7 +1,8 @@
 from django.contrib import admin
 from movies.models import Movie, Comment
-from .models import NewsLetter
+from .models import Member, Newsletter
 from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
-admin.site.register(NewsLetter)
+admin.site.register(Member)
+admin.site.register(Newsletter)
