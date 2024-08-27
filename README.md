@@ -157,19 +157,19 @@ I created 12 user stories with MoSCoW prioritization technique. Every user story
 
 ## Design
 
-### Colour Scheme
+### **Colour Scheme**
 
  I kept the color scheme minimalistic and fitting to the horror theme of the site. I realized that many horror movie posters use these colors.
 
 ![Color scheme image](docs/color-scheme.png)
 
-### Typography
+### **Typography**
 
 I selected Pathway Gothic One and Bebas Neue fonts from Google fonts. The dramatic feel of Bebas Neue font fits the site headings and movie titles perfectly.
 
 ![Fonts image](docs/fonts-image.png)
 
-### Wire-frames
+### **Wire-frames**
 
 In the planning stage, I used Balsamiq wireframes to create the basic layout of the website. Views of the pages change depending on if the user is signed in. The final design evolved more to fit to horror theme.
 
@@ -188,5 +188,40 @@ In the planning stage, I used Balsamiq wireframes to create the basic layout of 
 ## Validation, Testing & Bugs
 ## Deployment
 ## Technologies & Frameworks
+
+### **Main Technologies**
+
+- HTML - templates language of the project 
+- CSS - styling of the project with external CSS file
+- Python - BackEnd programming language of the project
+- JavaScript - for functionality.
+
+### **Frameworks, Libraries & Programs Used**
+
+- [Django](https://docs.djangoproject.com/) Python based framework for backend development.
+- [Bootstrap v.5.2.3](https://getbootstrap.com/docs/5.2/) styling framework used for the project.
+- [CI Database Maker](https://dbs.ci-dbs.net/)  Postgres database to store data.
+- [Heroku](https://id.heroku.com/login)  to deploy the project.
+- [GitHub](https://github.com/)  for version control and kanban board.
+- [Gitpod](https://www.gitpod.io/)  cloud IDE to deploy workspace environment to Github.
+- [Am I responsive?](https://ui.dev/amiresponsive) used for responsive mockup.
+- [Google Fonts](https://fonts.google.com/) to import fonts used on the site.
+- [Balsamiq](https://balsamiq.com/) to create Wireframes.
+- [V3C HTML](https://validator.w3.org/) used for HTML validator testing.
+- [V3C CSS](https://jigsaw.w3.org/css-validator/) used for CSS validator testing.
+- [JShint](https://jshint.com/) used for JavaScript testing.
+- [CI Python Linter](https://pep8ci.herokuapp.com/) used for Python validator testing.
+- [Dev Tools](https://developer.chrome.com/docs/devtools/) used throughout the project for testing, troubleshooting, and styling.
+- [Grammarly](https://app.grammarly.com/) To check the grammar of all text content.
+
+ > **Below documents and sites were used as study and reference material.**
+
+ - https://docs.djangoproject.com/en/4.2/ref/models/fields/#model-field-types
+ - https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data
+ - https://getbootstrap.com/docs/5.2/layout/utilities/
+ - https://getbootstrap.com/docs/5.2/examples/grid/#containers
+ - https://stackoverflow.com/questions/53594745/what-is-the-use-of-cleaned-data-in-django
+ - [CI I Think Therefore I Blog](https://learn.codeinstitute.net/) walkthrough project to help and assist with setup and coding.
+
 ## Credits
 ## Acknowledgments
