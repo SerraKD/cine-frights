@@ -187,6 +187,7 @@ In the planning stage, I used Balsamiq wireframes to create the basic layout of 
 ## Features
 ## Validation, Testing & Bugs
 ## Deployment
+
 ## Technologies & Frameworks
 
 ### **Main Technologies**
@@ -201,10 +202,10 @@ In the planning stage, I used Balsamiq wireframes to create the basic layout of 
 - [Django](https://docs.djangoproject.com/) Python based framework for backend development.
 - [Bootstrap v.5.2.3](https://getbootstrap.com/docs/5.2/) styling framework used for the project.
 - [CI Database Maker](https://dbs.ci-dbs.net/)  Postgres database to store data.
+- [Cloudinary](https://console.cloudinary.com/) - used to store static files.
 - [Heroku](https://id.heroku.com/login)  to deploy the project.
 - [GitHub](https://github.com/)  for version control and kanban board.
 - [Gitpod](https://www.gitpod.io/)  cloud IDE to deploy workspace environment to Github.
-- [Am I responsive?](https://ui.dev/amiresponsive) used for responsive mockup.
 - [Google Fonts](https://fonts.google.com/) to import fonts used on the site.
 - [Balsamiq](https://balsamiq.com/) to create Wireframes.
 - [V3C HTML](https://validator.w3.org/) used for HTML validator testing.
@@ -213,6 +214,14 @@ In the planning stage, I used Balsamiq wireframes to create the basic layout of 
 - [CI Python Linter](https://pep8ci.herokuapp.com/) used for Python validator testing.
 - [Dev Tools](https://developer.chrome.com/docs/devtools/) used throughout the project for testing, troubleshooting, and styling.
 - [Grammarly](https://app.grammarly.com/) To check the grammar of all text content.
+
+## Credits
+
+- [favicon](https://favicon.io/) for site logo
+- [Am I responsive?](https://ui.dev/amiresponsive) for responsive mockup.
+- [Adobe Color Wheel](https://color.adobe.com/) for color scheme
+- Code Institute Slack Channel
+- Code Institute Tutor Support
 
  > **Below documents and sites were used as study and reference material.**
 
@@ -223,5 +232,31 @@ In the planning stage, I used Balsamiq wireframes to create the basic layout of 
  - https://stackoverflow.com/questions/53594745/what-is-the-use-of-cleaned-data-in-django
  - [CI I Think Therefore I Blog](https://learn.codeinstitute.net/) walkthrough project to help and assist with setup and coding.
 
-## Credits
+### **Image Credits**
+
+- [default image](https://www.pexels.com/photo/bobbin-on-heap-of-film-3921045/)
+
+<details>
+<summary>
+View movie poster credits
+</summary>
+
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+</details>
+
 ## Acknowledgments
