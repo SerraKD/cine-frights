@@ -1,8 +1,8 @@
 from django import forms
-from .models import NewsLetter
+from .models import Member
 
-class NewsLetterForm(forms.ModelForm):
+class MemberForm(forms.ModelForm):
     ''' Newsletter field'''
     class Meta:
-        model = NewsLetter
+        model = Member
         fields = ('email',)
