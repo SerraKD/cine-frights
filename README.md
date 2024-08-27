@@ -157,6 +157,12 @@ I created 12 user stories with MoSCoW prioritization technique. Every user story
 
 ## Design
 
+### Colour Scheme
+
+ I kept the color scheme minimalistic and fitting to the horror theme of the site. I realized that many horror movie posters use these colors.
+
+![Color scheme image](docs/color-scheme.png)
+
 ### Wire-frames
 
 In the planning stage, I used Balsamiq wireframes to create the basic layout of the website. Views of the pages change depending on if the user is signed in. The final design evolved more to fit to horror theme.
