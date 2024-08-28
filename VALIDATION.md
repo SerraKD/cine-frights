@@ -39,7 +39,7 @@
 > **Errors & Fix**
 1. Error: Duplicate ID div_id_email.
 
-[Image of W3C newsletter page error](docs/validation/newsletter-error.png)
+![Image of W3C newsletter page error](docs/validation/newsletter-error.png)
 
 > <span style="color:red">Error description:</span> This error is caused by the crispy subscription form I created. Because for subscribing and unsubscribing the server is using the same form, it's automatically creating the above error. Unfortunately, I couldn't fix this issue.
 
@@ -63,7 +63,7 @@
 2. Error: Unclosed element span. 
 3. Error: No p element in scope but a p end tag seen. 
 
-[Image of W3C signup page error](docs/validation/signup-error.png)
+![Image of W3C signup page error](docs/validation/signup-error.png)
 
 > <span style="color:red">Error description:</span> This error is caused by Django's sign-up form. The part of the code that I wrote does not return any errors.
 
@@ -82,7 +82,48 @@
 
 ## **PEP8 Validation**
 
-- [CI Python Linter](https://pep8ci.herokuapp.com/)
+- [CI Python Linter](https://pep8ci.herokuapp.com/) used for all .py files.
+
+All the errors besides the ones specified below was about indentation, trailing whitespace and blank lines and all of them are fixed.
+
+| Directory    | File    | Result    |
+| :------: | :--------: | :--------: |
+| films  | admin.py  | PASS |
+| films | urls.py    | PASS  |
+| films | views.py   | PASS |
+| films | apps.py   | PASS  |
+| films | models.py  | PASS |
+| films  | forms.py  | PASS |
+| movies | admin.py  | PASS |
+| movies | urls.py   | FAIL |
+| movies | views.py  | FAIL  |
+| movies | apps.py   | PASS   |
+| movies | models.py   | FAIL |
+| movies  | forms.py   | PASS   |
+| cinefrights | asgi.py    | PASS |
+| cinefrights  | settings.py | FAIL |
+| cinefrights  | urls.py     | PASS   |
+| cinefrights  | wsgi.py     | PASS  |
+
+---
+> **All elow files' Fail Reason is Line too long**
+
+**settings.py**
+
+![CI Python Linter settings.py](docs/validation/pep8-settings.png)
+
+**movies/models.py**
+
+![CI Python Linter movies/models.py](docs/validation/pep8-movies-models.png)
+
+**movies/urls.py**
+
+![CI Python Linter movies/urs.py](docs/validation/pep8-movies-url.png)
+
+**movies/views.py**
+
+![CI Python Linter movies/views.py](docs/validation/pep8-movies-views.png)
+---
 
 ## **JS Validation**
 
