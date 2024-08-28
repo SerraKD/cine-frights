@@ -345,15 +345,15 @@ I documented validation, testing, and bugs in all separate files. Links to the r
 
 ### **Validation**
 
-> **[VALIDATION.md](/docs/VALIDATION.md)**
+> **[VALIDATION.md](VALIDATION.md)**
 
 ### **Testing**
 
-> **[TESTING.md](/docs/TESTING.md)**
+> **[TESTING.md](TESTING.md)**
 
 ### **Bugs**
 
-> **[BUGS.md](/docs/BUGS.md)**
+> **[BUGS.md](BUGS.md)**
 
 ## **Deployment**
 
