@@ -1,13 +1,15 @@
 from django.db import models
 from cloudinary.models import CloudinaryField
 
+
 class Member(models.Model):
     '''Class for newsletter subscription '''
     email = models.EmailField(unique=True)
     confirm = models.BooleanField(default=False)
 
     def __str__(self):
-        return self.email 
+        return self.email
+
 
 class Newsletter(models.Model):
     ''' Class for newsletter '''
