@@ -127,10 +127,40 @@ All the errors besides the ones specified below was about indentation, trailing 
 
 ## **JS Validation**
 
-- [JSHint](https://jshint.com/) 
+- [JSHint](https://jshint.com/) is used for custom Js file validation.
+
+**comments.js**
+
+![JSHint comments.js](docs/validation/jshint-comments.png)
 
 ## **CSS Validation**
 
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) is used for custom css file validation.
+
+**style.css**
+
+![W3C CSS Validator style.css](docs/validation/w3c-css.png)
 
 ## **Lighthouse**
+
+ - [Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) is used in incognito mode to test the performance, accessibility, best practices, and SEO of the site.
+
+**Home Page**
+
+ ![Lighthouse home page](docs/validation/lighthouse-home.png)
+
+**Films Page**
+
+ ![Lighthouse films page](docs/validation/lighthouse-films.png)
+
+**Movie Detail Page**
+
+ ![Lighthouse movie detail page](docs/validation/lighthouse-movie-detail.png)
+
+**Sign up Page**
+
+ ![Lighthouse Sign up page](docs/validation/lighthouse-signup.png)
+
+**Login Page**
+
+ ![Lighthouse Login Pagepage](docs/validation/lighthouse-login.png)
