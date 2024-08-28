@@ -39,18 +39,19 @@ a.post-link {
     text-decoration: none;
 }
 
-#card-title:hover {
+.card-title:hover {
     color: #830303;
 }
 
-#movie-title {
-    color: azure;
+.card-title {
+    color: #c80303;
     text-decoration: none;
 }
 
-p#movie-summary {
+p.movie-summary {
     color: #5e0101;
     text-decoration: none;
+    font-family: 'Pathway Gothic One';
 }
 
 /** Styles movie summary card **/
