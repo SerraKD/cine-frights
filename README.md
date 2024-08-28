@@ -264,12 +264,12 @@ Movie detail page includes movie title, site rating, IMDb and Rotten Tomatoes ra
 > - To add a comment users have to be signed in.
 > - Only comment author can edit or delete their comments.
 
-> - After submitting or editing a comment user gets informative feedback.
+> - **After submitting or editing a comment user gets informative feedback.**
 
 > ![Comment Submit Info Message](docs/features/comment-submit.png)
 > ![Comment Edit Info Message](docs/features/comment-update.png)
 
-> - If deleting a comment is selected, a warning modal pops up to inform the user.
+> - **If deleting a comment is selected, a warning modal pops up to inform the user.**
 
 > ![Comment Delete Modal](docs/features/comment-delete.png)
 
@@ -279,13 +279,65 @@ Movie detail page includes movie title, site rating, IMDb and Rotten Tomatoes ra
 
 ### **Sign Up Page**
 
+The signup page includes a form for the user to signup to the website.
+Username and password is mandatory and email is optional.
+
+| Sign Up | Image |
+| :----: | :----: |
+| Mobile | ![Mobile Sign Up Page image](docs/features/signup-mobile.png) |
+| Desktop | ![Desktop Sign Up Page image ](docs/features/signup-desktop.png) |
+
 ### **Login Page**
+
+The login page includes a form for the user to sign in with their username and password.
+
+| Login | Image |
+| :----: | :----: |
+| Mobile | ![Mobile Login Page image](docs/features/login-mobile.png) |
+| Desktop | ![Desktop Login Page image ](docs/features/login-desktop.png) |
+
+### **Log out page**
+
+The logout page includes a simple form for the user to logout.
+
+| Log out | Image |
+| :----: | :----: |
+| Mobile | ![Mobile Log out Page image](docs/features/logout-mobile.png) |
+| Desktop | ![Desktop Log out Page image ](docs/features/logout-dektop.png) |
 
 ### **Recommend A Movie Page**
 
+Recommend a movie page includes a form for users to recommend a movie for the website to be featured. All fields are mandatory to successfully send the form.
+
+| Recommend A Movie | Image |
+| :----: | :----: |
+| Mobile | ![Mobile Recommend A Movie Page image](docs/features/recommend-mobile.png) |
+| Desktop | ![Desktop LRecommend A Movie Page image ](docs/features/recommend-desktop.png) |
+
+> **If the form is correct, an informative text is shown to the user that their request is received.**
+
+> ![Recommend a movie form sucessuly sent info image](docs/features/recommend-success.png)
+
 ### **Newsletter Page**
 
-### **Log out page**
+The newsletter page includes a subscribe and unsubscribe form to the site's Newsletter.
+
+| Newsletter | Image |
+| :----: | :----: |
+| Mobile | ![Mobile Newsletter Page image](docs/features/newsletter-mobile.png) |
+| Desktop | ![Desktop Newsletter Page image ](docs/features/newsletter-desktop.png) |
+
+> **If the user already subscribed with the given email address, an informative message is shown to the user that the subscription failed.**
+> ![Newsletter Already subscribed info image](docs/features/newsletter-already-subs.png)
+
+> **If the form is correct, an informative text is shown to the user that their request is received.**
+> ![Newsletter subscribed sucessuly info image](docs/features/newsletter-subs-success.png)
+
+> **If the form is correct, an informative text is shown to the user that their unsubscription is successful.**
+> ![Newsletter sucessuly unsubscribed info image](docs/features/#)
+
+> **If the form is incorrect, an informative text is shown to the user that their unsubscription failed.**
+> ![Newsletter unsubscription failed info image](docs/features/newsletter-unsubs-fail.png)
 
 ## **Validation, Testing & Bugs**
 
