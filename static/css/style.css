@@ -190,6 +190,11 @@ p.subscribe {
 @media screen and (min-width: 768px) {
     .row.p-2 {
         max-height: 400vh;
+        width: 50%;
+    }
+
+    textarea.form-control {
+        max-height: calc(4em + 1.5rem + 2px);
     }
 
 }
