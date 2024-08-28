@@ -5,7 +5,6 @@ from cloudinary.models import CloudinaryField
 
 POST_STATUS = ((0, "Not Published"), (1, "Published"))
 
-# Create your models here.
 
 class Movie(models.Model):
     '''Class for movie posts '''
@@ -31,6 +30,7 @@ class Movie(models.Model):
     def __str__(self):
         return f"{self.title}"
 
+
 class Comment(models.Model):
     '''Class for user comments to the movie posts'''
     movie = models.ForeignKey(
@@ -40,11 +40,14 @@ class Comment(models.Model):
     content = models.TextField()
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
+
     class Meta:
         '''A meta class for meta data, comments are listed from newest to oldest'''
         ordering = ["-created_on"]
+
     def __str__(self):
         return f"{self.content} | by {self.username}"
+
 
 class RecommendMovie(models.Model):
     ''' Class for users to recommend a movie to be featured on the site '''
