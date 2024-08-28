@@ -115,20 +115,20 @@ p {
 
 }
 
-#carousel-caption {
+.carousel-caption {
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-size: medium;
     text-decoration: none;
 }
 
-#carousel-title {
+.carousel-title {
     color: azure;
     font-size: xx-large;
     text-decoration: none;
 }
 
-#carousel-title:hover {
+.carousel-title:hover {
     color: #0f0f0f;
 }
 
