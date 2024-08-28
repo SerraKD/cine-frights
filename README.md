@@ -212,6 +212,8 @@ General features include features that are found on every page such as the navig
 
 ![404 page image](docs/features/404-page.png)
 
+---
+
 ### **Home Page**
 
 The home page view includes one carousel slide to show the latest movies on the site. The content view of the page does not change whether the user is logged in or out, but the pages such as Newsletter and Recommend a Movie at the nav bar are only visible to logged-in users.
@@ -226,11 +228,54 @@ The home page view includes one carousel slide to show the latest movies on the 
 
 - When clicked, carousel image headings take the user to related movie posts and they have a hover effect.
 
-- Image heading and genre is only visible for tablets and larger screens.
+- **Image heading and genre is only visible for tablets and larger screens.**
 
 ![Carousel image heading hover effect](docs/features/carousel-heading-img.png)
 
+---
+
 ### **Films Page**
+
+Films page includes three movie posts per page and page pagination. Movie card shows movie poster, movie title, movie genre and website ratings. When clicked on a movie heading or genre, it takes the user to movie post details.
+
+- When clicked, movie titles take the user to related movie posts and they have a hover effect.
+
+| Films Page | Image |
+| :----: | :----: |
+| Mobile | ![Mobile Films Page image](docs/features/mobile-films-page.png) |
+| Mobile Pagination | ![Mobile Films Page pagination image ](docs/features/mobile-films-pagination.png) |
+| Desktop | ![Desktop Films Page image](docs/features/desktop-films-page.png) |
+
+---
+
+### **Movie Details**
+
+Movie detail page includes movie title, site rating, IMDb and Rotten Tomatoes ratings, movie release date, movie summary, movie poster, user comments and add a comment sections.
+
+| Movie Details | Image |
+| :----: | :----: |
+| Mobile | ![Mobile Movie Detail Page image](docs/features/movie-detail-mobile.png) |
+| Desktop | ![Desktop Movie Detail Page image ](docs/features/movie-detail.png) |
+| Desktop | ![Desktop Movie Detail Page image ](docs/features/movie-detail-comments.png) |
+| Desktop | ![Desktop Movie Detail Page image](docs/features/movie-detail-users-comment.png) |
+
+ **Comments**
+
+> - To add a comment users have to be signed in.
+> - Only comment author can edit or delete their comments.
+
+> - After submitting or editing a comment user gets informative feedback.
+
+> ![Comment Submit Info Message](docs/features/comment-submit.png)
+> ![Comment Edit Info Message](docs/features/comment-update.png)
+
+> - If deleting a comment is selected, a warning modal pops up to inform the user.
+
+> ![Comment Delete Modal](docs/features/comment-delete.png)
+
+> - Movie comments are only visible after approval of admin.
+> - Unapproved comments are only visible to their authors, change or deletion is possible.
+> - Movie comments are visible to logged in and out users.
 
 ### **Sign Up Page**
 
