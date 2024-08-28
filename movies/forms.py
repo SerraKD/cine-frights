@@ -3,9 +3,11 @@ from django import forms
 
 
 class CommentForm(forms.ModelForm):
+    ''' Movie comment field'''
     class Meta:
         model = Comment
         fields = ('content',)
+
 
 class RecommendMovieForm(forms.ModelForm):
     ''' Recommend a movie field'''
