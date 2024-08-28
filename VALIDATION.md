@@ -106,7 +106,7 @@ All the errors besides the ones specified below was about indentation, trailing 
 | cinefrights  | wsgi.py     | PASS  |
 
 ---
-> **All elow files' Fail Reason is Line too long**
+> **All below files' Fail Reason is Line too long**
 
 **settings.py**
 
