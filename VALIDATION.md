@@ -79,3 +79,17 @@
 > **Result**
 | <span style="color:green">Document checking completed. No errors or warnings to show. &check;</span>
 ---
+
+## **PEP8 Validation**
+
+- [CI Python Linter](https://pep8ci.herokuapp.com/)
+
+## **JS Validation**
+
+- [JSHint](https://jshint.com/) 
+
+## **CSS Validation**
+
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+## **Lighthouse**
