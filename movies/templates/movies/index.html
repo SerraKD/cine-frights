@@ -22,7 +22,7 @@
                         {% else %}
                             <img class="d-block w-100" src="{{ movie.movie_poster.url }}" alt="{{movie.title}}">
                         {% endif %}
-                        <div class="carousel-caption d-none d-md-block" id="carousel-caption">
+                        <div class="carousel-caption d-none d-md-block">
                             <a href="{% url 'movie_detail' movie.slug %}"><h5 id="carousel-title">{{ movie.title }}</h5></a>
                             <p>{{ movie.excerpt }}</p>
                         </div>
@@ -34,7 +34,7 @@
                         {% else %}
                             <img class="d-block w-100" src="{{ movie.movie_poster.url }}" alt="{{movie.title}}">
                         {% endif %}
-                            <div class="carousel-caption d-none d-md-block" id="carousel-caption">
+                            <div class="carousel-caption d-none d-md-block">
                                 <a href="{% url 'movie_detail' movie.slug %}"><h5 id="carousel-title">{{ movie.title }}</h5></a>
                                 <p>{{ movie.excerpt }}</p>
                             </div>
