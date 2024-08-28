@@ -27,11 +27,9 @@ def MembersView(request):
         else:
             messages.add_message(
                 request, messages.SUCCESS,
-                'You have already subscribed to newsletter with this email.'
-    )
+                'You have already subscribed to newsletter with this email.')
 
     member_form = MemberForm()
-    
     return render(
         request,
         "films/newsletter.html",
@@ -39,6 +37,7 @@ def MembersView(request):
             "member_form": member_form
         },
     )
+
 
 def Remove(request):
     '''to display unsubscribe the newsletter form'''
