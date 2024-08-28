@@ -7,7 +7,7 @@
 - **Github Page :** [https://github.com/SerraKD/cine-frights](https://github.com/SerraKD/cine-frights)
 - **Github Projects :**[https://github.com/users/SerraKD/projects/4](https://github.com/users/SerraKD/projects/4)
 
-![Mockup Image](/docs/#)
+![Mockup Image](/docs/amiresponsive-img.png)
 
 ---
 
