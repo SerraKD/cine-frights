@@ -38,6 +38,10 @@ a.post-link {
     text-decoration: none;
 }
 
+#card-title:hover {
+    color: #830303;
+}
+
 #movie-title {
     color: azure;
     text-decoration: none;
