@@ -6,10 +6,12 @@ from django.http import HttpResponseRedirect
 from .models import Movie, Comment, RecommendMovie
 from .forms import CommentForm, RecommendMovieForm
 
+
 class HomePageView(generic.ListView):
     ''' Method to display all movie posts'''
     queryset = Movie.objects.filter(status=1)
     template_name = "movies/index.html"
+
 
 def MovieDetailView(request, slug):
     ''' to display selected movie post details'''
@@ -18,7 +20,7 @@ def MovieDetailView(request, slug):
     comments = movie.movie_comments.all().order_by("-created_on")
     comment_count = movie.movie_comments.filter(approved=True).count()
     movie.movie_comments.filter(approved=True).count()
-    
+
     if request.method == "POST":
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
@@ -28,26 +30,28 @@ def MovieDetailView(request, slug):
             comment.save()
             messages.add_message(
                 request, messages.SUCCESS,
-                'Your comment is successfully submitted, will appear after approval')
+                'Your comment is successfully submitted, will appear after approval'
+                )
         else:
             messages.add_message(request, messages.ERROR, 'Something went wrong, please try again.')
 
     comment_form = CommentForm()
 
     return render(
-    request,
-    "movies/movie_detail.html",
-    {
-        "movie": movie,
-        "comments": comments,
-        "comment_count": comment_count,
-        "comment_form": comment_form,
-    },
-)
-            
+        request,
+        "movies/movie_detail.html",
+        {
+            "movie": movie,
+            "comments": comments,
+            "comment_count": comment_count,
+            "comment_form": comment_form,
+        },
+    )
+
+
 def recommend_view(request):
     '''to display recommend movie form'''
-    
+
     if request.method == "POST":
         recommend_movie_form = RecommendMovieForm(data=request.POST)
         if recommend_movie_form.is_valid():
@@ -88,6 +92,7 @@ def comment_edit(request, slug, comment_id):
             messages.add_message(request, messages.ERROR, 'An error occured while updating comment, try again.')
 
     return HttpResponseRedirect(reverse('movie_detail', args=[slug]))
+
 
 def comment_delete(request, slug, comment_id):
     """
