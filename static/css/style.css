@@ -167,7 +167,7 @@ p.subscribe {
     font-size: 90%;
 }
 
-/* Media query: small and medium devices (388 and up)*/
+/* Media query: small devices (388 and up)*/
 @media screen and (min-width: 320px) {
 
     /** styles movie carousel **/
@@ -186,15 +186,21 @@ p.subscribe {
     }
 }
 
-/** Media query: Tablets and larger (768px and up) **/
-@media screen and (min-width: 768px) {
+/** Media query: Tablets and medium deviced (768px and up) **/
+@media screen and (min-width: 560px) {
     .row.p-2 {
-        max-height: 400vh;
-        width: 30%;
+        width: 60%;
     }
 
     textarea.form-control {
         max-height: calc(4em + 1.5rem + 2px);
     }
 
+}
+
+/* Media query: large devices (1024px and up) */
+@media screen and (min-width: 1024px) {
+    .row.p-2 {
+        width: 30%;
+    }
 }
