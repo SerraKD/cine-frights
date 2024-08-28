@@ -296,29 +296,34 @@ In the planning stage, I used Balsamiq wireframes to create the basic layout of 
 
 ### **Image Credits**
 
-- [default image](https://www.pexels.com/photo/bobbin-on-heap-of-film-3921045/)
+- [default image | Photo by Dmitry Demidov: https://www.pexels.com/photo/bobbin-on-heap-of-film-3921045/s](https://www.pexels.com/photo/bobbin-on-heap-of-film-3921045/)
 
 <details>
 <summary>
-View movie poster credits
+Clik to View movie poster credits
 </summary>
 
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
+- https://images.app.goo.gl/syrCJZXRvUD3TkE7A
+- https://images.app.goo.gl/U3ryWUDco1Y6iZys6
+- https://images.app.goo.gl/RwXNJaPHtyfkWV1r7
+- https://images.app.goo.gl/8GFH9YTMELj1xC4e9
+- https://www.filmweb.pl/film/Terrifier-2011-692670/posters
+- https://images.app.goo.gl/CYuQGkvnK7sPfxoy7
+- https://www.imdb.com/title/tt4972582/mediaviewer/rm1913600000/?ref_=tt_ov_i
+- https://images.app.goo.gl/g9Xqhd124AHAqhYK9
+- https://images.app.goo.gl/7X2J43dzSeG98hEYA
+- https://images.app.goo.gl/yrUmrDneD1u1nsKM6
+- https://images.app.goo.gl/ktf6JmwERbWoNfF69
+- https://images.app.goo.gl/3qBw4pu2UQosNBVi9
+- https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPkv49y0UYywLik-CVtV5TnAl5KXKwf9W0nqOrw7HCl-pqow5k
+- https://images.app.goo.gl/6tEm4TTEdV14AdVg8
+- https://images.app.goo.gl/c3mNhZDPHJc3QxQd6
+- https://images.app.goo.gl/D8Gn2iQikTyJkPA66
+- https://images.app.goo.gl/WM453Peq485jGfTJA
+- https://images.app.goo.gl/yUwnvUZnXGH5Xumn8
+- https://images.app.goo.gl/KrA2qZstDoBALP3d7
+- https://images.app.goo.gl/s81iKDuGpayFYLzNA
+
 </details>
 
 ## Acknowledgments
