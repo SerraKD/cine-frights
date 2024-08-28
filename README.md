@@ -186,7 +186,69 @@ In the planning stage, I used Balsamiq wireframes to create the basic layout of 
 
 ## Features
 ## Validation, Testing & Bugs
+
 ## Deployment
+
+### **CI Database Maker**
+
+- Input your email to [CI Database Maker](https://dbs.ci-dbs.net/)
+- Go to your email and open the latest mail you recieved from Code Institute.
+- Click on the on the provided link to manage databases. 
+- Copy database URL provided you in selected database **info**.
+- Update your settings.py in your project directory.
+
+### **Cloudinary**
+
+- Go to [Cloudinary](https://console.cloudinary.com/) and register a new account.
+- Login to Cloudinary with your account credentials.
+- Navigate to Add a new environment.
+- Confirm your selection.
+- In your dashboard,under Product Environment, click on Go to API Keys.
+- Copy Cloudinary URL in format **cloudinary://<your_api_key>:<your_api_secret>**
+- Update settings.py in the your project directory.
+
+### **Environment & Settings**
+
+- In your IDE open your env.py file or create one in the main directory if it hasn't been created.
+- Add the DATABASE_URL value and a SECRET_KEY value to the env.py file.
+- Open the settings.py file and import the env.py file and the DATABASE_URL and SECRETKEY file paths.
+- Install Django and add to requirements.txt.
+- Create your project.
+- Add the STATIC files settings.
+- Create a file called **Procfile** in the main directory,
+- Add Cloudinary URL to env.py for cloud-based image storage.
+- Add Cloudinary to INSTALLED APPS.
+- Add your IDE workspace and Heroku to ALLOWED_HOSTS.
+- Make migrations and migrate.
+- Before you add, commit & push your files to GitHub, ensure **DEBUG** is set to **False** in your settings.py file.
+
+### **Deploying to Heroku**
+
+- Log in or create an account on Heroku.com. Click 'New' and then 'Create New App'.
+- Give your project a unique name, select a region, and click 'Create App'.
+- Connect your Heroku project to your GitHub repository. Under deployment, you can choose GitHub, select the appropriate one, and - select 'Connect'.
+- When you are connected, go to the Settings tab and click on 'Reveal Config Vars'. Add the environment key & value variables used in your env.py file **(CLOUDINARY_URL, DATABASE_URL & SECRET_KEY)**.
+- Next, add **'DISABLE_COLLECTSTATIC'** and add '1' if this is for disabling to prevent errors, or 0 if the app is in a state where errors will not be generated.
+- Click on Buildpack further down and click Add Buildpack.
+- Go to the Deploy section, click on Github for the deployment method, and confirm.
+- Search for your repository name and click connect.
+- At the bottom of the deploy section, make sure you are connected to the main branch and then click Deploy Branch.
+- Now you can view your live site.
+
+## **Local Deployment**
+
+**Fork**:
+
+1. Log in to Github and go to projects' repository.
+2. On the top right side of the page, click on _fork_ button.
+
+**Clone**:
+
+1. Log in to Github and go to projects' repository.
+2. On the top of the file lists, click on _Code_ button.
+3. Whether you want to use HTTPS, SSH key or Github CLI select it, and then click on copy.
+4. Open the terminal, type **git clone** and paste the URL copied.
+5. Press enter and local clone is now created.
 
 ## Technologies & Frameworks
 
