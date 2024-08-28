@@ -186,6 +186,62 @@ In the planning stage, I used Balsamiq wireframes to create the basic layout of 
 
 ## **Features**
 
+### **General features**
+
+General features include features that are found on every page such as the navigation bar and footer.
+
+#### **Navigation bar**
+
+| Nav-bar| Image |
+| :----: | :----: |
+| Mobile | ![Mobile nav-bar image](docs/features/nav-mobile.png) |
+| Mobile Dropdown | ![Mobile Dropdown nav-bar image](docs/features/nav-mobile-drop.png) |
+| Mobile Logged in user| ![Mobile Logged in user nav-bar image](docs/features/nav-mobile-signedin-drop.png) |
+| Desktop | ![Desktop nav-bar image](docs/features/nav-desktop.png) |
+| Desktop Logged in user | ![Desktop Logged in user nav-bar image](docs/features/nav-desktop-signedin.png) |
+
+---
+
+#### **Footer**
+
+![Footer image](docs/features/footer-img.png)
+
+---
+
+> **404 Page**
+
+![404 page image](docs/features/404-page.png)
+
+### **Home Page**
+
+The home page view includes one carousel slide to show the latest movies on the site. The content view of the page does not change whether the user is logged in or out, but the pages such as Newsletter and Recommend a Movie at the nav bar are only visible to logged-in users.
+
+- There is an informative message at the top right corner of the page letting users if they are logged in.
+
+| Home Page | Image |
+| :----: | :----: |
+| Mobile | ![Mobile home page image](docs/features/mobile-home.png) |
+| Desktop | ![Desktop home page image](docs/features/desktop-home.png) |
+| Desktop Logged in user | ![Desktop Logged in user home page image](docs/features/desktop-home-loggedin.png) |
+
+- When clicked, carousel image headings take the user to related movie posts and they have a hover effect.
+
+- Image heading and genre is only visible for tablets and larger screens.
+
+![Carousel image heading hover effect](docs/features/carousel-heading-img.png)
+
+### **Films Page**
+
+### **Sign Up Page**
+
+### **Login Page**
+
+### **Recommend A Movie Page**
+
+### **Newsletter Page**
+
+### **Log out page**
+
 ## **Validation, Testing & Bugs**
 
 I documented validation, testing, and bugs in all separate files. Links to the relative files are located below.
