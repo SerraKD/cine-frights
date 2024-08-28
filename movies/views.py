@@ -28,8 +28,9 @@ def MovieDetailView(request, slug):
             comment.save()
             messages.add_message(
                 request, messages.SUCCESS,
-                'Your comment is successfully submitted, will appear after approval'
-    )
+                'Your comment is successfully submitted, will appear after approval')
+        else:
+            messages.add_message(request, messages.ERROR, 'Something went wrong, please try again.')
 
     comment_form = CommentForm()
 
@@ -52,6 +53,8 @@ def recommend_view(request):
         if recommend_movie_form.is_valid():
             recommend_movie_form.save()
             messages.add_message(request, messages.SUCCESS, "Thank you,we recieved your recommendation. You will get an respond within a week.")
+        else:
+            messages.add_message(request, messages.ERROR, 'Something went wrong, please try again.')
 
     recommend_movie_form = RecommendMovieForm()
 
