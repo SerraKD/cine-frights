@@ -1,4 +1,4 @@
-# ***Cine Frights***
+# ***Cine-Frights***
 
 - **Description :** **Cine Frights** Is a horror movie review blog created for Portfolio Project 4. This website includes the latest horror movies with various popular movie pages ratings, website's ratings, a chance to create a user account, comment on movies to share users' opinions, join to website newsletter, and recommend a movie to be featured on the website.
 - **Project goal :** To create a platform for horror movie lovers to review the latest horror movies, and engage with other users by commenting and sharing opinions about movies.
@@ -7,11 +7,11 @@
 - **Github Page :** [https://github.com/SerraKD/cine-frights](https://github.com/SerraKD/cine-frights)
 - **Github Projects :**[https://github.com/users/SerraKD/projects/4](https://github.com/users/SerraKD/projects/4)
 
-![Mockup Image](/docs/amiresponsive-img.png)
+![Mockup Image](/docs/design/amiresponsive-img.png)
 
 ---
 
-## User Experience (UX)
+## **User Experience (UX)**
 
 ### **Site Goals**
 
@@ -38,7 +38,7 @@ The target audience is users looking for new horror movies, seeing multiple rati
 
 As the site developer, I used Epics as the main frame to build the site and keep the work ordered.
 
-![Kanban Board image](docs/kanban-board.png)
+![Kanban Board image](docs/design/kanban-board.png)
 
 - **[Epic 1. Create the project & Set up the Environment](https://github.com/users/SerraKD/projects/4/views/1?pane=issue&itemId=71533834)** &check;
 > Epic Description : Set up the project repository and manage the Heroku deployment.
@@ -155,19 +155,19 @@ I created 12 user stories with MoSCoW prioritization technique. Every user story
 > **[Kanban Board @SerraKD's PP4 Cine-Frights](https://github.com/users/SerraKD/projects/4/views/1)**
 ---
 
-## Design
+## **Design**
 
 ### **Colour Scheme**
 
  I kept the color scheme minimalistic and fitting to the horror theme of the site. I realized that many horror movie posters use these colors.
 
-![Color scheme image](docs/color-scheme.png)
+![Color scheme image](docs/design/color-scheme.png)
 
 ### **Typography**
 
 I selected Pathway Gothic One and Bebas Neue fonts from Google fonts. The dramatic feel of Bebas Neue font fits the site headings and movie titles perfectly.
 
-![Fonts image](docs/fonts-image.png)
+![Fonts image](docs/design/fonts-image.png)
 
 ### **Wire-frames**
 
@@ -184,10 +184,25 @@ In the planning stage, I used Balsamiq wireframes to create the basic layout of 
 | Sign In | ![Sign In Page wireframe image](docs/wireframes/sign-wireframe.png) |
 | Login | ![Login Page wireframe image](docs/wireframes/login-wireframe.png) |
 
-## Features
-## Validation, Testing & Bugs
+## **Features**
 
-## Deployment
+## **Validation, Testing & Bugs**
+
+I documented validation, testing, and bugs in all separate files. Links to the relative files are located below.
+
+### **Validation**
+
+> **[VALIDATION.md](/docs/VALIDATION.md)**
+
+### **Testing**
+
+> **[TESTING.md](/docs/TESTING.md)**
+
+### **Bugs**
+
+> **[BUGS.md](/docs/BUGS.md)**
+
+## **Deployment**
 
 ### **CI Database Maker**
 
@@ -250,7 +265,7 @@ In the planning stage, I used Balsamiq wireframes to create the basic layout of 
 4. Open the terminal, type **git clone** and paste the URL copied.
 5. Press enter and local clone is now created.
 
-## Technologies & Frameworks
+## **Technologies & Frameworks**
 
 ### **Main Technologies**
 
@@ -277,7 +292,7 @@ In the planning stage, I used Balsamiq wireframes to create the basic layout of 
 - [Dev Tools](https://developer.chrome.com/docs/devtools/) used throughout the project for testing, troubleshooting, and styling.
 - [Grammarly](https://app.grammarly.com/) To check the grammar of all text content.
 
-## Credits
+## **Credits**
 
 - [favicon](https://favicon.io/) for site logo
 - [Am I responsive?](https://ui.dev/amiresponsive) for responsive mockup.
@@ -300,7 +315,7 @@ In the planning stage, I used Balsamiq wireframes to create the basic layout of 
 
 <details>
 <summary>
-Clik to View movie poster credits
+Click to View movie poster credits
 </summary>
 
 - https://images.app.goo.gl/syrCJZXRvUD3TkE7A
@@ -326,4 +341,4 @@ Clik to View movie poster credits
 
 </details>
 
-## Acknowledgments
+## **Acknowledgments**
