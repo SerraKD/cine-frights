@@ -40,19 +40,19 @@ As the site developer, I used Epics as the main frame to build the site and keep
 
 ![Kanban Board image](docs/design/kanban-board.png)
 
-- **[Epic 1. Create the project & Set up the Environment](https://github.com/users/SerraKD/projects/4/views/1?pane=issue&itemId=71533834)** &check;
+- **[Epic 1. Create the project & Set up the Environment](https://github.com/users/SerraKD/projects/4/views/1?pane=issue&itemId=71533834) <kbd>[Must Have](https://github.com/SerraKD/cine-frights/labels/Must%20Have)</kbd>** &check;
 > Epic Description : Set up the project repository and manage the Heroku deployment.
 
-- **[Epic 2. Create Database & Models](https://github.com/users/SerraKD/projects/4/views/1?pane=issue&itemId=71536163)** &check;
+- **[Epic 2. Create Database & Models](https://github.com/users/SerraKD/projects/4/views/1?pane=issue&itemId=71536163) <kbd>[Must Have](https://github.com/SerraKD/cine-frights/labels/Must%20Have)</kbd>** &check;
 > Epic Description : configure database, manage environment variables, create models.
 
-- **[Epic 3. Admin Panel & Functions](https://github.com/users/SerraKD/projects/4/views/1?pane=issue&itemId=71563124)** &check;
+- **[Epic 3. Admin Panel & Functions](https://github.com/users/SerraKD/projects/4/views/1?pane=issue&itemId=71563124) <kbd>[Must Have](https://github.com/SerraKD/cine-frights/labels/Must%20Have)</kbd>** &check;
 > Epic Description : Site admins competence & tasks.
 
-- **[Epic 4. Validation & Testing](https://github.com/users/SerraKD/projects/4/views/1?pane=issue&itemId=71564008)** &check;
+- **[Epic 4. Validation & Testing](https://github.com/users/SerraKD/projects/4/views/1?pane=issue&itemId=71564008) <kbd>[Must Have](https://github.com/SerraKD/cine-frights/labels/Must%20Have)</kbd>** &check;
 > Epic Description : All testing and validation required for the project.
 
-- **[Epic 5. Automated testing with Django](https://github.com/users/SerraKD/projects/4/views/1?pane=issue&itemId=71564953)**
+- **[Epic 5. Automated testing with Django](https://github.com/users/SerraKD/projects/4/views/1?pane=issue&itemId=71564953) <kbd>[Could Have](https://github.com/SerraKD/cine-frights/labels/Could%20Have)</kbd>**
 > Epic Description: Automated testing to check projects functionality.
 
 
@@ -60,7 +60,7 @@ As the site developer, I used Epics as the main frame to build the site and keep
 
 I created 12 user stories with MoSCoW prioritization technique. Every user story includes the acceptance criteria.
 
-- **[1.User Story: User Account registration](https://github.com/SerraKD/cine-frights/issues/3)** &check;
+- **[1.User Story: User Account registration](https://github.com/SerraKD/cine-frights/issues/3) <kbd>[Must Have](https://github.com/SerraKD/cine-frights/labels/Must%20Have)</kbd>**  &check;
 
 > As a site user I can create an account so that i can use the site as logged in user .
 
@@ -69,28 +69,28 @@ I created 12 user stories with MoSCoW prioritization technique. Every user story
 > 2. After creation user can log in.
 > 3. Logged in user can view and create a comment.
 
-- **[2.User Story: User Login](https://github.com/SerraKD/cine-frights/issues/4)** &check;
+- **[2.User Story: User Login](https://github.com/SerraKD/cine-frights/issues/4) <kbd>[Must Have](https://github.com/SerraKD/cine-frights/labels/Must%20Have)</kbd>** &check;
 
 > As a site user I can login into my account so that i can write a comment on a movie post and suggest movies to the site.
 
 > Acceptance Criteria
 > 1. I can log in into account using my user name and password with log in link.
 
-- **[3.User Story: View the details of movie posts](https://github.com/SerraKD/cine-frights/issues/5)** &check;
+- **[3.User Story: View the details of movie posts](https://github.com/SerraKD/cine-frights/issues/5) <kbd>[Must Have](https://github.com/SerraKD/cine-frights/labels/Must%20Have)</kbd>** &check;
 
 > As a Site User, I can click on a post so that I can read the movie details, view ratings and comments.
 
 > Acceptance Criteria
 > 1. When a movie post title is clicked on movie name, info, ratings and user comment is seen.
 
-- **[4.User Story: Log out](https://github.com/SerraKD/cine-frights/issues/6)** &check;
+- **[4.User Story: Log out](https://github.com/SerraKD/cine-frights/issues/6) <kbd>[Must Have](https://github.com/SerraKD/cine-frights/labels/Must%20Have)</kbd>**  &check;
 
 > As a site user I can log out of my account.
 
 > Acceptance Criteria
 > 1. Any logged in user has the functionality to log out.
 
-- **[5.User Story: Comment on a movie post](https://github.com/SerraKD/cine-frights/issues/7)** &check;
+- **[5.User Story: Comment on a movie post](https://github.com/SerraKD/cine-frights/issues/7) <kbd>[Must Have](https://github.com/SerraKD/cine-frights/labels/Must%20Have)</kbd>** &check;
 
 > As a site user I can write comments so that i can engage with other users and share my opinion about movies.
 
@@ -98,37 +98,37 @@ I created 12 user stories with MoSCoW prioritization technique. Every user story
 > 1. Comments has to be approved my admin before other users view.
 > 2. Users can read, update and delete their comments.
 
-- **[6.User Story: Change or delete a comment](https://github.com/SerraKD/cine-frights/issues/9)** &check;
+- **[6.User Story: Change or delete a comment](https://github.com/SerraKD/cine-frights/issues/9) <kbd>[Must Have](https://github.com/SerraKD/cine-frights/labels/Must%20Have)</kbd>** &check;
 
 > As a Site User I can change or delete my comment on a movie post.
 
 > Acceptance Criteria
 > 1. A logged in user can change &/or delete their comment.
 
-- **[7.User Story: View all Movie posts](https://github.com/SerraKD/cine-frights/issues/10)** &check;
+- **[7.User Story: View all Movie posts](https://github.com/SerraKD/cine-frights/issues/10) <kbd>[Must Have](https://github.com/SerraKD/cine-frights/labels/Must%20Have)</kbd>** &check;
 
 >  As a site user I can view all movies so that i can choose which movie post i want to see more detailed.
 
 > Acceptance Criteria
 > 1. All movie posts should be listed with their poster.
 > 2. When a user opens movies page all posts can be seen.
-> 3. Page pagination required if there is multiple posts.
+> 3. Page pagination required if there is multiple posts. 
 
-- **[8.User Story: Search Movies](https://github.com/SerraKD/cine-frights/issues/11)** &cross;
+- **[8.User Story: Search Movies](https://github.com/SerraKD/cine-frights/issues/11) <kbd>[Could Have](https://github.com/SerraKD/cine-frights/labels/Could%20Have)</kbd>** &cross;
 
 > As a site user i can search movie names so that i can find specific movie post i am interested in.
 
 > Acceptance Criteria
 > 1. Search bar should be at the top of the home page. 
 
-- **[9.User Story: Delete user account](https://github.com/SerraKD/cine-frights/issues/12)** &cross;
+- **[9.User Story: Delete user account](https://github.com/SerraKD/cine-frights/issues/12) <kbd>[Could Have](https://github.com/SerraKD/cine-frights/labels/Could%20Have)</kbd>** &cross;
 
 > As a user I can delete my account if i want to.
 
 > Acceptance Criteria
-> 1. When i go to my account page i can delete my account.
+> 1. When i go to my account page i can delete my account. https://github.com/SerraKD/cine-frights/labels/Should%20Have
 
-- **[10.User Story: View Recommended movies](https://github.com/SerraKD/cine-frights/issues/13)** &check;
+- **[10.User Story: View Recommended movies](https://github.com/SerraKD/cine-frights/issues/13) <kbd>[Should Have](https://github.com/SerraKD/cine-frights/labels/Should%20Have)</kbd>** &check;
 
 > As a site user I can view recommended movies on a slide at the home page.
 
@@ -136,14 +136,14 @@ I created 12 user stories with MoSCoW prioritization technique. Every user story
 > 1. The slides must include movie posters and names.
 > 2. When clicked on, the slide picture should take user to the linked movie post.
 
-- **[11.User Story: Recommend a movie](https://github.com/SerraKD/cine-frights/issues/14)** &check;
+- **[11.User Story: Recommend a movie](https://github.com/SerraKD/cine-frights/issues/14) <kbd>[Could Have](https://github.com/SerraKD/cine-frights/labels/Could%20Have)</kbd>** &check;
 
 > As a logged in user i would like to recommend a movie to the site admin for it to be featured.
 
 > Acceptance Criteria
 > 1. Logged in users can fill out a form to recommend a movie.
 
-- **[12.User Story: Subscribe to Newsletter](https://github.com/SerraKD/cine-frights/issues/28)** &check;
+- **[12.User Story: Subscribe to Newsletter](https://github.com/SerraKD/cine-frights/issues/28) <kbd>[Could Have](https://github.com/SerraKD/cine-frights/labels/Could%20Have)</kbd>** &check;
 
 > As a user, I can subscribe to the newsletter to stay updated about the newest movies.
 
@@ -299,6 +299,7 @@ I documented validation, testing, and bugs in all separate files. Links to the r
 - [Adobe Color Wheel](https://color.adobe.com/) for color scheme
 - Code Institute Slack Channel
 - Code Institute Tutor Support
+- Markdown labels [https://github.com/isaacs/github/issues/305](https://github.com/isaacs/github/issues/305#issuecomment-308790044)
 
  > **Below documents and sites were used as study and reference material.**
 
