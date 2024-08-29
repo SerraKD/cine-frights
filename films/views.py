@@ -9,14 +9,18 @@ from .forms import MemberForm
 
 
 class FilmsPageView(generic.ListView):
-    ''' Method to movie post corousel'''
+    """
+    View for displaying paginated list of movie posts.
+    """
     queryset = Movie.objects.filter(status=1)
     template_name = "films/films.html"
     paginate_by = 3
 
 
 def MembersView(request):
-    '''to display join the newsletter form'''
+    """
+    Handles the display of the newsletter subscription form.
+    """
     if request.method == "POST":
         member_form = MemberForm(data=request.POST)
         if member_form .is_valid():
@@ -41,7 +45,9 @@ def MembersView(request):
 
 
 def Remove(request):
-    '''to display unsubscribe the newsletter form'''
+    """
+    Handles the unsubscription from the newsletter.
+    """
     if request.method == "POST":
         email = request.POST.get("email")
         if email:
