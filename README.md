@@ -555,3 +555,5 @@ Click to View movie poster credits
 </details>
 
 ## **Acknowledgments**
+
+[Back to top](https://github.com/SerraKD/cine-frights#cine-frights)
