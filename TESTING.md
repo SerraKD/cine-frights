@@ -1,5 +1,17 @@
 # **Testing**
 
+# **Table of contents**
+1. [Manual Testing](#manual-testing)
+    - [**Navigation bar**](#navigation-bar)
+    - [**Home Page**](#home-page)
+    - [**Signup Page**](#signup-page)
+    - [**Films Page**](#films-page)
+    - [**Movie Detail Page**](#movie-detail-page)
+    - [**Login Page**](#login-page)
+    - [**Logout Page**](#logout-page)
+    - [**Recommend a movie Page**](#recommend-a-movie-page)
+    - [**Newsletter Page**](#newsletter-page)
+
 ## **Manual Testing**
 
 > **All Testings are done both on mobile and desktop devices.**
@@ -52,7 +64,7 @@
 ![Username warning](docs/testing/username-taken.png)
 ---
 
-### **Films Page** 
+### **Films Page**
 
 | Category | Feature | Expected Behaviour | Testing Method | Actual Behaviour | Result |
 | :------- | :------ | :----------------- | :--------------- | :------------- | :----- |
@@ -134,7 +146,10 @@
 
 
 ![Newsletter Already subscribed info image](docs/features/newsletter-already-subs.png)
+
 ![Newsletter subscribed sucessuly info image](docs/features/newsletter-subs-success.png)
+
 ![Newsletter email does not exist info image](docs/features/newsletter-subs-doesnt-exist.png)
- ![Newsletter unsubscription failed info image](docs/features/newsletter-unsubs-fail.png)
+
+![Newsletter unsubscription failed info image](docs/features/newsletter-unsubs-fail.png)
 ---
