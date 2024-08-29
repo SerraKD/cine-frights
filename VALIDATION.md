@@ -105,6 +105,9 @@ All the errors besides the ones specified below was about indentation, trailing 
 | cinefrights  | urls.py     | PASS   |
 | cinefrights  | wsgi.py     | PASS  |
 
+> After fixing the [Newsletter Unsubscribe Bug](https://github.com/SerraKD/cine-frights/issues/29) in films/views.py i ran PEP8 validation again.
+![CI Python Linter films/views.py](docs/validation/pep8-films-views.png)
+
 ---
 > **All below files' Fail Reason is Line too long**
 
