@@ -7,6 +7,7 @@ Django==4.2.13
 django-allauth==0.57.2
 django-crispy-forms==2.3
 django-emoji-picker==0.0.6
+django-extensions==3.2.3
 django-summernote==0.8.20.0
 forms2==1.1.2
 greenlet==3.0.3
