@@ -1,5 +1,22 @@
 # **Validation**
 
+# **Table of contents**
+
+1. [**HTML Validation**](#html-validation)
+    - [**Home Page**](#home-page)
+    - [ **Films Page**](#films-page)
+    - [**Recommend a Movie Page**](#recommend-a-movie-page)
+    - [**Newsletter Page**](#newsletter-page)
+    - [**Log out Page**](#log-out-page)
+    - [**Sign Up Page**](#sign-up-page)
+    - [**Login Page**](#login-page)
+2. [**PEP8 Validation**](#pep8-validation)
+3. [**JS Validation**](#js-validation)
+4. [**CSS Validation**](#css-validation)
+5. [**Lighthouse**](#lighthouse)
+
+
+
 ## **HTML Validation**
 
  - [W3C HTML Validator](https://validator.w3.org/) - is used to validate each pages source code.
