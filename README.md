@@ -10,6 +10,50 @@
 ![Mockup Image](/docs/design/amiresponsive-img.png)
 
 ---
+# **Table of contents**
+
+1. [***Cine-Frights***](#cine-frights)
+2. [**User Experience (UX)**](#user-experience-ux)
+   - [**Site Goals**](#site-goals)
+   - [**Target Audiance**](#target-audiance)
+   - [**Epics**](#epics)
+   - [**User stories**](#user-stories)
+3. [**Design**](#design)
+   - [**Colour Scheme**](#colour-scheme)
+   - [**Typography**](#typography)
+   - [**Wire-frames**](#wire-frames)
+   - [**Data Models**](#data-models)
+4. [**Features**](#features)
+   - [**General features**](#general-features)
+      - [**Navigation bar**](#navigation-bar)
+      - [**Footer**](#footer)
+      - [**404 Page**](#404-page)
+   - [**Home Page**](#home-page)
+   - [**Films Page**](#films-page)
+   - [**Movie Details**](#movie-details)
+   - [**Sign Up Page**](#sign-up-page)
+   - [**Login Page**](#login-page)
+   - [**Log out page**](#log-out-page)
+   - [**Recommend A Movie Page**](#recommend-a-movie-page)
+   - [**Newsletter Page**](#newsletter-page)
+5. [**Validation, Testing & Bugs**](#validation-testing--bugs)
+   - [**Validation**](#validation)
+   - [**Testing**](#testing)
+   - [**Bugs**](#bugs)
+6. [**Deployment**](#deployment)
+   - [**CI Database Maker**](#ci-database-maker)
+   - [**Cloudinary**](#cloudinary)
+   - [**Environment & Settings**](#environment--settings)
+   - [**Deploying to Heroku**](#deploying-to-heroku)
+7. [**Local Deployment**](#local-deployment)
+8. [**Technologies & Frameworks**](#technologies--frameworks)
+   - [**Main Technologies**](#main-technologies)
+   - [**Frameworks, Libraries & Programs Used**](#frameworks-libraries--programs-used)
+9. [**Credits**](#credits)
+   - [**Image Credits**](#image-credits)
+10. [**Acknowledgments**](#acknowledgments)
+
+
 
 ## **User Experience (UX)**
 
@@ -221,7 +265,7 @@ General features include features that are found on every page such as the navig
 
 ---
 
-> **404 Page**
+> #### **404 Page**
 
 ![404 page image](docs/features/404-page.png)
 
