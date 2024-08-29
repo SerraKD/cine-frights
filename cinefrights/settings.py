@@ -63,6 +63,7 @@ INSTALLED_APPS = [
     'emoji_picker',
     'movies',
     'films',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
