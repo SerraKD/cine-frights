@@ -462,6 +462,8 @@ I documented validation, testing, and bugs in all separate files. Links to the r
  - https://getbootstrap.com/docs/5.2/examples/grid/#containers
  - https://stackoverflow.com/questions/53594745/what-is-the-use-of-cleaned-data-in-django
  - [CI I Think Therefore I Blog](https://learn.codeinstitute.net/) walkthrough project to help and assist with setup and coding.
+ - https://docs.python.org/3/library/exceptions.html
+ - https://www.w3schools.com/python/python_try_except.asp
 
 ### **Image Credits**
 
