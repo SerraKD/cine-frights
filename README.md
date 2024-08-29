@@ -333,8 +333,8 @@ The newsletter page includes a subscribe and unsubscribe form to the site's News
 > **If the form is correct, an informative text is shown to the user that their request is received.**
 > ![Newsletter subscribed sucessuly info image](docs/features/newsletter-subs-success.png)
 
-> **If the form is correct, an informative text is shown to the user that their unsubscription is successful.**
-> ![Newsletter sucessuly unsubscribed info image](docs/features/#)
+> **If the provided email is not already subscribed, an informative text is shown to the user that this email is not subscribed.**
+> ![Newsletter email does not exist info image](docs/features/newsletter-subs-doesnt-exist.png)
 
 > **If the form is incorrect, an informative text is shown to the user that their unsubscription failed.**
 > ![Newsletter unsubscription failed info image](docs/features/newsletter-unsubs-fail.png)
