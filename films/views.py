@@ -45,13 +45,20 @@ def Remove(request):
     if request.method == "POST":
         email = request.POST.get("email")
         if email:
-            # valid email
-            member = Member.objects.get(email=email)
-            member.delete()
-            messages.add_message(
-                request, messages.SUCCESS,
-                'You have succesfully unsubscribed to our Newsletter'
-            )
+            try:
+                # valid email
+                member = Member.objects.get(email=email)
+                member.delete()
+            except Member.DoesNotExist:
+                messages.add_message(
+                    request, messages.ERROR,
+                    'This email adress is not subscribed to the newsletter.')
+            else:
+                # let user know that they unsubscribed succesfully
+                messages.add_message(
+                    request, messages.SUCCESS,
+                    'You have succesfully unsubscribed to our Newsletter')
+
         else:
             # not valid
             messages.add_message(
