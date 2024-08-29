@@ -184,6 +184,19 @@ In the planning stage, I used Balsamiq wireframes to create the basic layout of 
 | Sign In | ![Sign In Page wireframe image](docs/wireframes/sign-wireframe.png) |
 | Login | ![Login Page wireframe image](docs/wireframes/login-wireframe.png) |
 
+
+### **Data Models**
+
+**Films**
+
+Data models generated with Django-extensions & Graphviz.
+
+![Data Model films app image](docs/wireframes/films_models.png)
+
+**Movies**
+
+![Data Model movies app image](docs/wireframes/movies_models.png)
+
 ## **Features**
 
 ### **General features**
