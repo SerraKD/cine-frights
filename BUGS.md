@@ -1,5 +1,10 @@
 # **Bugs**
 
+# **Table of contents**
+
+1. [**Fixed Bugs**](#fixed-bugs)
+2. [**Unfixed bugs**](#unfixed-bugs)
+
 ## **Fixed Bugs**
 
 During the development, I documented the bugs I encountered in projects' [Kanban Board](https://github.com/users/SerraKD/projects/4/).
