@@ -60,10 +60,4 @@ def Remove(request):
 
     member_form = MemberForm()
 
-    return render(
-        request,
-        "films/newsletter.html",
-        {
-            "member_form": member_form
-        },
-    )
+    return HttpResponseRedirect(reverse('news_letter'))
