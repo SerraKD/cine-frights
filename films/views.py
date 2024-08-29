@@ -43,9 +43,10 @@ def MembersView(request):
 def Remove(request):
     '''to display unsubscribe the newsletter form'''
     if request.method == "POST":
-        member_form = MemberForm(data=request.POST)
-        if member_form .is_valid():
-            email_delete = member_form.cleaned_data["email"]
+
+        email = request.POST.get("email")
+
+        if email:
             remove = Member.objects.get(email=email_delete)
             remove.delete()
             messages.add_message(
