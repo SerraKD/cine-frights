@@ -44,9 +44,8 @@ def Remove(request):
     '''to display unsubscribe the newsletter form'''
     if request.method == "POST":
         email = request.POST.get("email")
-
         if email:
-            #valid email
+            # valid email
             member = Member.objects.get(email=email)
             member.delete()
             messages.add_message(
@@ -54,11 +53,11 @@ def Remove(request):
                 'You have succesfully unsubscribed to our Newsletter'
             )
         else:
-            #not valid
+            # not valid
             messages.add_message(
                 request, messages.ERROR,
                 'Request failed, please check the email provided.'
             )
     member_form = MemberForm()
-    
+
     return HttpResponseRedirect(reverse('news_letter'))
