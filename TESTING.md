@@ -45,15 +45,12 @@
 
 | Category | Feature | Expected Behaviour | Testing Method | Actual Behaviour | Result |
 | :------- | :------ | :----------------- | :--------------- | :------------- | :----- |
-| **Login Page** |  |  |  |  | **PASS &check;** |
-| **Login Page** |  |  |  |  | **PASS &check;** |
-| **Login Page** |  |  |  |  | **PASS &check;** |
-| **Login Page** |  |  |  |  | **PASS &check;** |
-| **Login Page** |  |  |  |  | **PASS &check;** |
-| **Login Page** |  |  |  |  | **PASS &check;** |
-| **Login Page** |  |  |  |  | **PASS &check;** |
+| **Login Page** | 	Signing In | The username and password has to match with a previously registered account. | Tried signing with previously created mock account. | Signed in succesfully. | **PASS &check;** |
+| **Login Page** |  Signing In | If username and password has to match with a previously registered account, show warning. | Tried signing in with an non existent account. | Warned that given credentials are not correct. Sign in failed. | **PASS &check;** |
 
+![Login credentials warning](docs/testing/username-not-correct..png)
 ---
+
 | Category | Feature | Expected Behaviour | Testing Method | Actual Behaviour | Result |
 | :------- | :------ | :----------------- | :--------------- | :------------- | :----- |
 | **Recommend a movie Page** |  |  |  |  | **PASS &check;** |
