@@ -1,8 +1,10 @@
 # **Testing**
 
 ## **Manual Testing**
+
 > **All Testings are done both on mobile and desktop devices.**
 ---
+### **Navigation bar** 
 
 | Category | Feature | Expected Behaviour | Testing Method | Actual Behaviour | Result |
 | :------- | :------ | :----------------- | :--------------- | :------------- | :----- |
@@ -17,8 +19,11 @@
 - Navigation bar is fully functional on mobile devices.
 
 ![Mobile nav-bar image](docs/features/nav-mobile.png)
+
 ![Mobile Dropdown nav-bar image](docs/features/nav-mobile-drop.png)
 ---
+
+### **Home Page** 
 
 | Category | Feature | Expected Behaviour | Testing Method | Actual Behaviour | Result |
 | :------- | :------ | :----------------- | :--------------- | :------------- | :----- |
@@ -28,6 +33,8 @@
 
 ![Carousel image heading hover effect](docs/features/carousel-heading-img.png)
 ---
+
+### **Signup Page** 
 
 | Category | Feature | Expected Behaviour | Testing Method | Actual Behaviour | Result |
 | :------- | :------ | :----------------- | :--------------- | :------------- | :----- |
@@ -39,19 +46,23 @@
 | **Signup Page** | Signup form | Accept form submitton if if user data provided is suiting to above requirements. | Created a new account. | Accepted signup form. | **PASS &check;** |
 
 ![Password warning](docs/testing/password-common.png)
+
 ![Password warning](docs/testing/password-short.png)
+
 ![Username warning](docs/testing/username-taken.png)
 ---
 
+### **Films Page** 
+
 | Category | Feature | Expected Behaviour | Testing Method | Actual Behaviour | Result |
 | :------- | :------ | :----------------- | :--------------- | :------------- | :----- |
-| **Films Page** |  |  |  |  | **PASS &check;** |
-| **Films Page** |  |  |  |  | **PASS &check;** |
-| **Films Page** |  |  |  |  | **PASS &check;** |
-| **Films Page** |  |  |  |  | **PASS &check;** |
-| **Films Page** |  |  |  |  | **PASS &check;** |
-| **Films Page** |  |  |  |  | **PASS &check;** |
+| **Films Page** | Pagination | Users should be taken to the next page or the previous page. | Clicked both buttons. | Takes to next and previous page. | **PASS &check;** |
+| **Films Page** | Movie title & genre links | Users should be taken to the movie details when movie title is clicked. | Clicked on mvie titles. | Takes to relevant movies detail page. | **PASS &check;** |
+
+![Pagination image](docs/testing/pagination-img.png)
 ---
+
+### **Movie Detail Page** 
 
 | Category | Feature | Expected Behaviour | Testing Method | Actual Behaviour | Result |
 | :------- | :------ | :----------------- | :--------------- | :------------- | :----- |
@@ -62,13 +73,21 @@
 | **Movie Detail Page** | View movie poster | Any signed in & out user can view movie poster on medium and large devices. | Went to movie details page as signed in and out user. | Movie poster is visible in medium and large devices.  | **PASS &check;** |
 
 ![Comment Submit Info Message](docs/features/comment-submit.png)
+
 ![Comment Edit Info Message](docs/features/comment-update.png)
+
 ![Comment Delete Modal](docs/features/comment-delete.png)
+
 ![Mobile Movie Detail Page image](docs/features/movie-detail-mobile.png)
+
 ![Desktop Movie Detail Page image ](docs/features/movie-detail.png)
+
 ![Desktop Movie Detail Page image ](docs/features/movie-detail-comments.png)
+
 ![Desktop Movie Detail Page image](docs/features/movie-detail-users-comment.png)
 ---
+
+###  **Login Page** 
 
 | Category | Feature | Expected Behaviour | Testing Method | Actual Behaviour | Result |
 | :------- | :------ | :----------------- | :--------------- | :------------- | :----- |
@@ -76,8 +95,11 @@
 | **Login Page** |  Signing In | If username and password has to match with a previously registered account, show warning. | Tried signing in with an non existent account. | Warned that given credentials are not correct. Sign in failed. | **PASS &check;** |
 
 ![Login credentials warning](docs/testing/username-not-correct..png)
+
 ![Login informative text](docs/testing/sign-in.png)
 ---
+
+### **Logout Page** 
 
 | Category | Feature | Expected Behaviour | Testing Method | Actual Behaviour | Result |
 | :------- | :------ | :----------------- | :--------------- | :------------- | :----- |
@@ -86,15 +108,22 @@
 ![Logout informative text](docs/testing/sign-out.png)
 ---
 
+### **Recommend a movie Page**
+
 | Category | Feature | Expected Behaviour | Testing Method | Actual Behaviour | Result |
 | :------- | :------ | :----------------- | :--------------- | :------------- | :----- |
 | **Recommend a movie Page** | Movie Recommendation Form | Any signed in user can submit a movie recommendation form. | Submitted a recomendation as signed in user. | Form succesfuly submitted. | **PASS &check;** |
 | **Recommend a movie Page** | Form fields | All required form fields has to be filled to submit the form. | Tried submitting the form with one empty field and multiple empty fields. | Form cannot be submitted with empty fields. | **PASS &check;** |
 
 ![Movie recommendation success informative text](docs/testing/recommend-movie-succes.png)
+
 ![Movie recommendation required fields warning](docs/testing/recommend-fill-in.png)
+
 ![Movie recommendation required fields warning](docs/testing/recommend-fill-in-2.png)
 ---
+
+### **Newsletter Page**
+
 | Category | Feature | Expected Behaviour | Testing Method | Actual Behaviour | Result |
 | :------- | :------ | :----------------- | :--------------- | :------------- | :----- |
 | **Newsletter Page** | Newsletter Form Subscribe | Any signed in user can subscribe to the sites newsletter. | Submitted subscription form with test email as logged in user. | Subscription form is succesfuly submitted, informative message is shown. | **PASS &check;** |
