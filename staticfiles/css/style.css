@@ -70,6 +70,11 @@ p.movie-summary {
     border-radius: 5px;
 }
 
+/** Styles movie detail ratings and release date title **/
+p#movie-title {
+    color: azure;
+}
+
 /** Styles movie comments **/
 .card {
     color: #0f0f0f;
@@ -95,6 +100,7 @@ p {
     color: #830303;
     font-family: 'Pathway Gothic One';
     letter-spacing: 0.1vh;
+    font-size: large;
 }
 
 .modal-content h5 {
@@ -163,6 +169,11 @@ textarea#id_movie_title {
 
 p.subscribe {
     color: azure;
+}
+
+/** Styling for informative messages shown to user   **/
+div#msg {
+    font-size: large;
 }
 
 /** Styling for edit, delete, modal buttons  **/
