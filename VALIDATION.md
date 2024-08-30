@@ -5,6 +5,7 @@
 1. [**HTML Validation**](#html-validation)
     - [**Home Page**](#home-page)
     - [ **Films Page**](#films-page)
+    - [**Movie Detail Page**](#movie-detail-page)
     - [**Recommend a Movie Page**](#recommend-a-movie-page)
     - [**Newsletter Page**](#newsletter-page)
     - [**Log out Page**](#log-out-page)
