@@ -3,7 +3,7 @@
 
 {% block content %}
 
-<!-- index.html content starts here -->
+<!-- films.html content starts here -->
 <div class="container-fluid">
     <div class="row">
 
@@ -16,9 +16,11 @@
                         <div class="card-body"> 
                             <div class="image-container">
                                 {% if "placeholder" in movie.movie_poster.url %}
+                                <!-- default image -->
                                 <img class="card-img-top" src="{% static 'images/default-image.jpg' %}"
                                     alt="placeholder image">
                                 {% else %}
+                                <!--  Cloudinary movie image -->
                                 <img class="card-img-top" src=" {{ movie.movie_poster.url }}" alt="{{ movie.title }}">
                                 {% endif %}
                                 <div class="image-flash">  
@@ -56,5 +58,5 @@
     {% endif %}
 </div>
 
-<!-- index.html content ends here -->
+<!-- films.html content ends here -->
 {% endblock %}
