@@ -461,6 +461,7 @@ I documented validation, testing, and bugs in all separate files. Links to the r
 
 - In your IDE open your env.py file or create one in the main directory if it hasn't been created.
 - Add the DATABASE_URL value and a SECRET_KEY value to the env.py file.
+**[create the secret key in env.py, fetch it in settings.py](https://github.com/SerraKD/cine-frights/commit/167033169c42dbc91271837a6595273cb989546f)**
 - Open the settings.py file and import the env.py file and the DATABASE_URL and SECRETKEY file paths.
 - Install Django and add to requirements.txt.
 - Create your project.
