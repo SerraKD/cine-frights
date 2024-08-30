@@ -112,10 +112,10 @@ All the errors besides the ones specified below was about indentation, trailing 
 | films | models.py  | PASS |
 | films  | forms.py  | PASS |
 | movies | admin.py  | PASS |
-| movies | urls.py   | FAIL |
-| movies | views.py  | FAIL  |
+| movies | urls.py   | PASS |
+| movies | views.py  | PASS  |
 | movies | apps.py   | PASS   |
-| movies | models.py   | FAIL |
+| movies | models.py   | PASS |
 | movies  | forms.py   | PASS   |
 | cinefrights | asgi.py    | PASS |
 | cinefrights  | settings.py | FAIL |
@@ -126,7 +126,7 @@ All the errors besides the ones specified below was about indentation, trailing 
 ![CI Python Linter films/views.py](docs/validation/pep8-films-views.png)
 
 ---
-> **All below files' Fail Reason is Line too long**
+> **All below files' Fail Reason was Line too long**
 
 **settings.py**
 
@@ -143,6 +143,23 @@ All the errors besides the ones specified below was about indentation, trailing 
 **movies/views.py**
 
 ![CI Python Linter movies/views.py](docs/validation/pep8-movies-views.png)
+---
+
+**Fix**
+
+> **I broke down all long lines in below files and did PEP8 validation again**
+
+**movies/models.py**
+
+![CI Python Linter movies/models.py](docs/validation/pep8-movies-models-new.png)
+
+**movies/urls.py**
+
+![CI Python Linter movies/urs.py](docs/validation/pep8-movies-url-new.png)
+
+**movies/views.py**
+
+![CI Python Linter movies/views.py](docs/validation/pep8-movies-views-new.png)
 ---
 
 ## **JS Validation**
