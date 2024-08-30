@@ -3,7 +3,9 @@ from cloudinary.models import CloudinaryField
 
 
 class Member(models.Model):
-    '''Class for newsletter subscription '''
+    """
+    Class for newsletter subscription
+    """
     email = models.EmailField(unique=True)
     confirm = models.BooleanField(default=False)
 
@@ -12,7 +14,9 @@ class Member(models.Model):
 
 
 class Newsletter(models.Model):
-    ''' Class for newsletter '''
+    """
+    Class for newsletter
+    """
     subject = models.CharField(max_length=200, unique=True, default="subject")
     contents = models.TextField(blank=False, null=False, default="text")
     images = CloudinaryField('image', default='placeholder')
