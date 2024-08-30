@@ -183,6 +183,18 @@ All the errors besides the ones specified below was about indentation, trailing 
 
 **Login Page**
 
- ![Lighthouse Login Pagepage](docs/validation/lighthouse-login.png)
+ ![Lighthouse Login Page](docs/validation/lighthouse-login.png)
+
+**Newsletter Page**
+
+ ![Lighthouse Newsletter Page](docs/validation/lighthouse-newsletter.png)
+
+**Recommend a movie Page**
+
+![Lighthouse Recommend a movie Page](docs/validation/lighthouse-recommend.png)
+
+**Logout Page**
+
+![Lighthouse Logout Page](docs/validation/lighthouse-logout.png)
 
 **[Go back to README.md](https://github.com/SerraKD/cine-frights#cine-frights)**
