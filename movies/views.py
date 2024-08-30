@@ -34,10 +34,14 @@ def MovieDetailView(request, slug):
             comment.save()
             messages.add_message(
                 request, messages.SUCCESS,
-                'Your comment is successfully submitted, will appear after approval'
-                )
+                """Your comment is successfully submitted,
+                 it will appear after approval."""
+            )
         else:
-            messages.add_message(request, messages.ERROR, 'Something went wrong, please try again.')
+            messages.add_message(
+                request, messages.ERROR,
+                'Something went wrong, please try again.'
+            )
 
     comment_form = CommentForm()
 
@@ -62,9 +66,16 @@ def recommend_view(request):
         recommend_movie_form = RecommendMovieForm(data=request.POST)
         if recommend_movie_form.is_valid():
             recommend_movie_form.save()
-            messages.add_message(request, messages.SUCCESS, "Thank you,we recieved your recommendation. You will get an respond within a week.")
+            messages.add_message(
+                request, messages.SUCCESS,
+                """Thank you,we recieved your recommendation.
+                You will get an respond within a week."""
+            )
         else:
-            messages.add_message(request, messages.ERROR, 'Something went wrong, please try again.')
+            messages.add_message(
+                request, messages.ERROR,
+                """Something went wrong, please try again."""
+            )
 
     recommend_movie_form = RecommendMovieForm()
 
@@ -93,9 +104,15 @@ def comment_edit(request, slug, comment_id):
             comment.movie = movie
             comment.approved = False
             comment.save()
-            messages.add_message(request, messages.SUCCESS, 'Yor comment is updated.')
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Your comment is updated.'
+            )
         else:
-            messages.add_message(request, messages.ERROR, 'An error occured while updating comment, try again.')
+            messages.add_message(
+                request, messages.ERROR,
+                'An error occured while updating comment, try again.'
+            )
 
     return HttpResponseRedirect(reverse('movie_detail', args=[slug]))
 
@@ -110,8 +127,13 @@ def comment_delete(request, slug, comment_id):
 
     if comment.username == request.user:
         comment.delete()
-        messages.add_message(request, messages.SUCCESS, 'Comment deleted.')
+        messages.add_message(
+            request, messages.SUCCESS, 'Comment deleted.'
+        )
     else:
-        messages.add_message(request, messages.ERROR, 'You can only delete your own comments.')
+        messages.add_message(
+            request, messages.ERROR,
+            'You can only delete your own comments.'
+        )
 
     return HttpResponseRedirect(reverse('movie_detail', args=[slug]))
