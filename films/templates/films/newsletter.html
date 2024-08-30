@@ -3,6 +3,7 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
+<!-- newsletter.html content starts here -->
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-12 col-md-6 my-5">
@@ -10,6 +11,7 @@
             <h2>Do you want to stay updated for the newest frights?</h2>
             <p class="subscribe">Subscribe to our newsletter.</p>
 
+            <!-- crispy forms for subscription -->
             <form method="post">
                 {{ member_form | crispy }}
                 {% csrf_token %}
@@ -20,6 +22,7 @@
             <h2>Do you want to unsubscribe?</h2>
             <p class="subscribe">Enter your email below.</p>
 
+            <!-- crispy forms for unsubscription -->
             <form method="post" action="{% url 'unsubscribe' %}">
                 {{ member_form | crispy }}
                 {% csrf_token %}
