@@ -41,6 +41,7 @@
       1. [**HTML Validation**](https://github.com/SerraKD/cine-frights/blob/main/VALIDATION.md#html-validation)
           - [**Home Page**](https://github.com/SerraKD/cine-frights/blob/main/VALIDATION.md#home-page)
           - [ **Films Page**](https://github.com/SerraKD/cine-frights/blob/main/VALIDATION.md#films-page)
+          - [**Movie Detail Page**](https://github.com/SerraKD/cine-frights/blob/main/VALIDATION.md#movie-detail-page)
           - [**Recommend a Movie Page**](https://github.com/SerraKD/cine-frights/blob/main/VALIDATION.md#recommend-a-movie-page)
           - [**Newsletter Page**](https://github.com/SerraKD/cine-frights/blob/main/VALIDATION.md#newsletter-page)
           - [**Log out Page**](https://github.com/SerraKD/cine-frights/blob/main/VALIDATION.md#log-out-page)
