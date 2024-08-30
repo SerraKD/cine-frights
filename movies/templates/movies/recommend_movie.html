@@ -6,9 +6,11 @@
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-12 col-md-6 my-5">
+            <!-- Movie recommendation info -->
             <h2>Do you have a movie that you want to recommend to us to be featured?</h2>
             <p class="recommend">Fill out the below form and we will consider your request.</p>
 
+            <!-- Movie recommendation form -->
             <form method="post">
                 {{ recommend_movie_form | crispy }}
                 {% csrf_token %}
