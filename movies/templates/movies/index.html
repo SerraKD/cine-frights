@@ -9,13 +9,13 @@
     <div class="row p-2">
         <div id="carousel-movies" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                {% for movie in movie_list %}
+                {% for movie in movie_list|slice:":4" %}
                     <button type="button" data-bs-target="#carousel-movies" data-bs-slide-to="{{ forloop.counter0 }}" 
                     {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{ forloop.counter }}"></button>
                 {% endfor %}
             </div>
             <div class="carousel-inner" >
-                {% for movie in movie_list%}
+                {% for movie in movie_list|slice:":4" %}
                     {% if  forloop.counter == 1 %}
                         <div class="carousel-item active" data-bs-interval="2000">
                         {% if "placeholder" in movie.movie_poster.url %}
