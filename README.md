@@ -258,7 +258,7 @@ In the planning stage, I used Balsamiq wireframes to create the basic layout of 
 
 **Films**
 
-Data models generated with Django-extensions & Graphviz.
+Data models generated with [Django-extensions](https://django-extensions.readthedocs.io/en/latest/) & [Graphviz](https://graphviz.org/).
 
 ![Data Model films app image](docs/wireframes/films_models.png)
 
@@ -526,6 +526,8 @@ I documented validation, testing, and bugs in all separate files. Links to the r
 - [CI Python Linter](https://pep8ci.herokuapp.com/) used for Python validator testing.
 - [Dev Tools](https://developer.chrome.com/docs/devtools/) used throughout the project for testing, troubleshooting, and styling.
 - [Grammarly](https://app.grammarly.com/) To check the grammar of all text content.
+- [Django-extensions](https://django-extensions.readthedocs.io/en/latest/) & [Graphviz](https://graphviz.org/) Used  to create database scheme.
+
 
 ## **Credits**
 
