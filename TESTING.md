@@ -153,3 +153,5 @@
 
 ![Newsletter unsubscription failed info image](docs/features/newsletter-unsubs-fail.png)
 ---
+
+**[Go back to README.md](https://github.com/SerraKD/cine-frights#cine-frights)**
