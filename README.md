@@ -583,4 +583,8 @@ Click to View movie poster credits
 
 ## **Acknowledgments**
 
+- I am deeply grateful to my Mentor [Rory Patrick Sheridan](https://github.com/Ri-Dearg), for his invaluable guidance, support, and great tips.
+
+- Special thanks to everyone from CI Tutor Assistance for helping me to fight off the roadblocks I stumbled upon while working on this project.
+
 [Back to top](https://github.com/SerraKD/cine-frights#cine-frights)
