@@ -75,7 +75,7 @@ p.movie-summary {
 }
 
 /** Styles movie detail ratings and release date title **/
-p#movie-title {
+.movie-title {
     color: azure;
 }
 
