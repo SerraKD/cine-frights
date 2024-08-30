@@ -7,7 +7,9 @@ POST_STATUS = ((0, "Not Published"), (1, "Published"))
 
 
 class Movie(models.Model):
-    '''Class for movie posts '''
+    """
+    Class for movie posts.
+    """
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
@@ -32,7 +34,9 @@ class Movie(models.Model):
 
 
 class Comment(models.Model):
-    '''Class for user comments to the movie posts'''
+    """
+    Class for user comments comment on a movie post.
+    """
     movie = models.ForeignKey(
         Movie, on_delete=models.CASCADE, related_name="movie_comments")
     username = models.ForeignKey(
@@ -50,7 +54,9 @@ class Comment(models.Model):
 
 
 class RecommendMovie(models.Model):
-    ''' Class for users to recommend a movie to be featured on the site '''
+    """
+    Class representing movie recommendation from user.
+    """
     username = models.CharField(max_length=200)
     email = models.EmailField()
     movie_title = models.TextField(max_length=200)
