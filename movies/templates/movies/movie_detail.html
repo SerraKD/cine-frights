@@ -20,14 +20,14 @@
               {{ movie.release_date }}</p>
         </div>
           <!-- The movie post summary -->
-          <div class="card-body p-3" id="detail-card">
+          <div class="card-body p-3 detail-card">
             <p class="card-text"> {{ movie.summary | safe }}
             </p>
           </div>
         <!-- Displaying Comments -->
         <div class="card mb-4  mt-3">
           <h3>Comments: {{ comment_count }}</h3>
-          <div class="card-body" id="detail-card">
+          <div class="card-body detail-card">
             <!-- for loop to iterate through each comment in comments -->
             {% for comment in comments %}
             <div
@@ -53,7 +53,7 @@
           </div>
           <!-- To create new comments -->
           <div class="card mb-3  mt-3 ">
-            <div class="card-body" id="detail-card">
+            <div class="card-body detail-card">
               {% if user.is_authenticated %}
               <h3>Leave a comment:</h3>
               <p>Posting as: {{ user.username }}</p>
