@@ -42,6 +42,16 @@
 | <span style="color:green">Document checking completed. No errors or warnings to show. &check;</span>
 ---
 
+### **Movie Detail Page**
+
+> **Errors & Fix**
+1. Error: Attribute comment_is ID not allowed on element button. | **Fix: Added data attibute to comment id in movie_detail.html**
+
+
+> **Result**
+| <span style="color:green">Document checking completed. No errors or warnings to show. &check;</span>
+---
+
 ### **Recommend a Movie Page**
 
 > **Errors & Fix**
