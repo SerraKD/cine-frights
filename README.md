@@ -158,14 +158,14 @@ I created 12 user stories with MoSCoW prioritization technique. Every user story
 > 2. When a user opens movies page all posts can be seen.
 > 3. Page pagination required if there is multiple posts. 
 
-- **[8.User Story: Search Movies](https://github.com/SerraKD/cine-frights/issues/11)** https://github.com/SerraKD/cine-frights/labels/Could%20Have &cross;
+- **[8.User Story: Search Movies](https://github.com/SerraKD/cine-frights/issues/11)** https://github.com/SerraKD/cine-frights/labels/Could%20Have &cross; https://github.com/SerraKD/cine-frights/labels/Wont%20Have
 
 > As a site user i can search movie names so that i can find specific movie post i am interested in.
 
 > Acceptance Criteria
 > 1. Search bar should be at the top of the home page. 
 
-- **[9.User Story: Delete user account](https://github.com/SerraKD/cine-frights/issues/12)** https://github.com/SerraKD/cine-frights/labels/Could%20Have &cross;
+- **[9.User Story: Delete user account](https://github.com/SerraKD/cine-frights/issues/12)** https://github.com/SerraKD/cine-frights/labels/Could%20Have &cross; https://github.com/SerraKD/cine-frights/labels/Wont%20Have
 
 > As a user I can delete my account if i want to.
 
