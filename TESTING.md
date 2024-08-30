@@ -6,7 +6,7 @@
     - [**Home Page**](#home-page)
     - [**Signup Page**](#signup-page)
     - [**Films Page**](#films-page)
-    - [**Movie Detail Page** & JS Testing(Comments)](#movie-detail-page)
+    - [**Movie Detail Page** & JS Testing(Comments)](#movie-detail-page--js-testingcomments)
     - [**Login Page**](#login-page)
     - [**Logout Page**](#logout-page)
     - [**Recommend a movie Page**](#recommend-a-movie-page)
