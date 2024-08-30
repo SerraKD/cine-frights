@@ -8,13 +8,17 @@ from .forms import CommentForm, RecommendMovieForm
 
 
 class HomePageView(generic.ListView):
-    ''' Method to display all movie posts'''
+    """
+    View to display all movie posts on the homepage.
+    """
     queryset = Movie.objects.filter(status=1)
     template_name = "movies/index.html"
 
 
 def MovieDetailView(request, slug):
-    ''' to display selected movie post details'''
+    """
+    View to display selected movie post details.
+    """
     queryset = Movie.objects.filter(status=1)
     movie = get_object_or_404(queryset, slug=slug)
     comments = movie.movie_comments.all().order_by("-created_on")
@@ -50,7 +54,9 @@ def MovieDetailView(request, slug):
 
 
 def recommend_view(request):
-    '''to display recommend movie form'''
+    """
+    View to display recommend movie form.
+    """
 
     if request.method == "POST":
         recommend_movie_form = RecommendMovieForm(data=request.POST)
@@ -73,7 +79,7 @@ def recommend_view(request):
 
 def comment_edit(request, slug, comment_id):
     """
-    view to edit movie comments
+    View to edit movie comments.
     """
     if request.method == "POST":
 
@@ -96,7 +102,7 @@ def comment_edit(request, slug, comment_id):
 
 def comment_delete(request, slug, comment_id):
     """
-    view to delete movie comments
+    View to delete movie comments.
     """
     queryset = Movie.objects.filter(status=1)
     movie = get_object_or_404(queryset, slug=slug)
