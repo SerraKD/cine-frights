@@ -545,6 +545,8 @@ I documented validation, testing, and bugs in all separate files. Links to the r
  - [CI I Think Therefore I Blog](https://learn.codeinstitute.net/) walkthrough project to help and assist with setup and coding.
  - https://docs.python.org/3/library/exceptions.html
  - https://www.w3schools.com/python/python_try_except.asp
+ - https://docs.djangoproject.com/en/5.1/ref/templates/builtins/#slice
+ - https://docs.djangoproject.com/en/5.1/ref/templates/builtins/
 
 ### **Image Credits**
 
