@@ -44,3 +44,5 @@ All Commits Regarding to app change:
 - remove frights path from imports in admin.py [74b3aa9](https://github.com/SerraKD/cine-frights/commit/74b3aa9ec7c59f9e5c15e509046fd14eb3c8b08b)
 
 ## **Unfixed bugs**
+
+**[Go back to README.md](https://github.com/SerraKD/cine-frights#cine-frights)**
