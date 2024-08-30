@@ -45,4 +45,6 @@ All Commits Regarding to app change:
 
 ## **Unfixed bugs**
 
+No unfixed bugs.
+
 **[Go back to README.md](https://github.com/SerraKD/cine-frights#cine-frights)**
