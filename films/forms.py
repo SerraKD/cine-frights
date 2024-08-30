@@ -3,7 +3,9 @@ from .models import Member
 
 
 class MemberForm(forms.ModelForm):
-    ''' Newsletter field'''
+    """
+    Newsletter member field
+    """
     class Meta:
         model = Member
         fields = ('email',)
