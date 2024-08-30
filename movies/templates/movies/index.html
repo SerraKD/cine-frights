@@ -9,9 +9,10 @@
     <div class="row p-2">
         <div id="carousel-movies" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carousel-movies" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carousel-movies" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carousel-movies" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                {% for movie in movie_list %}
+                    <button type="button" data-bs-target="#carousel-movies" data-bs-slide-to="{{ forloop.counter0 }}" 
+                    {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{ forloop.counter }}"></button>
+                {% endfor %}
             </div>
             <div class="carousel-inner" >
                 {% for movie in movie_list%}
