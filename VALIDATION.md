@@ -184,3 +184,5 @@ All the errors besides the ones specified below was about indentation, trailing 
 **Login Page**
 
  ![Lighthouse Login Pagepage](docs/validation/lighthouse-login.png)
+
+**[Go back to README.md](https://github.com/SerraKD/cine-frights#cine-frights)**
