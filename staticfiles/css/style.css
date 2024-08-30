@@ -67,7 +67,7 @@ p.movie-summary {
     border-radius: 5px;
 }
 
-#detail-card {
+.detail-card {
     background-color: rgb(255, 255, 255);
     color: black;
     padding: 10px 10px;
