@@ -56,7 +56,7 @@
          - [**Home Page**](https://github.com/SerraKD/cine-frights/blob/main/TESTING.md#home-page)
          - [**Signup Page**](https://github.com/SerraKD/cine-frights/blob/main/TESTING.md#signup-page)
          - [**Films Page**](https://github.com/SerraKD/cine-frights/blob/main/TESTING.md#films-page)
-         - [**Movie Detail Page**](https://github.com/SerraKD/cine-frights/blob/main/TESTING.md#movie-detail-page)
+         - [**Movie Detail Page** & JS Testing(Comments)](https://github.com/SerraKD/cine-frights/blob/main/TESTING.md#movie-detail-page--js-testingcomments)
          - [**Login Page**](https://github.com/SerraKD/cine-frights/blob/main/TESTING.md#login-page)
          - [**Logout Page**](https://github.com/SerraKD/cine-frights/blob/main/TESTING.md#logout-page)
          - [**Recommend a movie Page**](https://github.com/SerraKD/cine-frights/blob/main/TESTING.md#recommend-a-movie-page)
