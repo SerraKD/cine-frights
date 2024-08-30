@@ -6,7 +6,7 @@
     - [**Home Page**](#home-page)
     - [**Signup Page**](#signup-page)
     - [**Films Page**](#films-page)
-    - [**Movie Detail Page**](#movie-detail-page)
+    - [**Movie Detail Page** & JS Testing(Comments)](#movie-detail-page)
     - [**Login Page**](#login-page)
     - [**Logout Page**](#logout-page)
     - [**Recommend a movie Page**](#recommend-a-movie-page)
@@ -74,7 +74,7 @@
 ![Pagination image](docs/testing/pagination-img.png)
 ---
 
-### **Movie Detail Page** 
+### **Movie Detail Page** & JS Testing(Comments)
 
 | Category | Feature | Expected Behaviour | Testing Method | Actual Behaviour | Result |
 | :------- | :------ | :----------------- | :--------------- | :------------- | :----- |
