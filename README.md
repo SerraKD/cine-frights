@@ -124,6 +124,25 @@ As the site developer, I used Epics as the main frame to build the site and keep
 - **[Epic 5. Automated testing with Django](https://github.com/users/SerraKD/projects/4/views/1?pane=issue&itemId=71564953)** https://github.com/SerraKD/cine-frights/labels/Could%20Have
 > Epic Description: Automated testing to check projects functionality.
 
+I tried to built few tests in movies app and films app for forms and views, whenever i run the tests i am getting below error.
+
+**"Found 1 test(s).
+Creating test database for alias 'default'...
+Traceback (most recent call last):
+
+django.db.utils.OperationalError: near "None": syntax error"**
+
+> I believe the error is caused by movies.0004_alter_movie_our_rating migration. Need to delete existing migrations and make migrations again.
+
+![Automated testing 'python manage.py test --verbosity=2' run terminal result](docs/testing/automated-test-err-img.png)
+
+> Explanation of migration **'0004_alter_movie_our_rating'** : I added emoji picker widget to add emojis for movie ratings as admin, but i decided to not use the widget because i could add emojis to text field without any extra widgets.
+![Automated testing '0004_alter_movie_our_rating' migration image](docs/testing/migration-0004-img.png)
+
+At this point of the project, the deployed site works without any issues, and i don't have any errors in the workspace. I don't want to alter the migrations because it shows the development process clearly and i don't want to cause any unexpected errors.
+
+> **I really wanted to include basic automated testing to improve my skills, so i will be adding it to the project after submission and getting the results.**
+
 
 ### **User stories**
 
