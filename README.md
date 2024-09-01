@@ -579,6 +579,10 @@ I documented validation, testing, and bugs in all separate files. Links to the r
  - https://www.w3schools.com/python/python_try_except.asp
  - https://docs.djangoproject.com/en/5.1/ref/templates/builtins/#slice
  - https://docs.djangoproject.com/en/5.1/ref/templates/builtins/
+ - https://docs.djangoproject.com/en/5.1/topics/testing/overview/
+ - https://docs.djangoproject.com/en/5.1/intro/tutorial05/
+ - https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing
+ - https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing#showing_more_test_information
 
 ### **Image Credits**
 
