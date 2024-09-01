@@ -121,7 +121,7 @@ As the site developer, I used Epics as the main frame to build the site and keep
 - **[Epic 4. Validation & Testing](https://github.com/users/SerraKD/projects/4/views/1?pane=issue&itemId=71564008)** https://github.com/SerraKD/cine-frights/labels/Must%20Have &check;
 > Epic Description : All testing and validation required for the project.
 
-- **[Epic 5. Automated testing with Django](https://github.com/users/SerraKD/projects/4/views/1?pane=issue&itemId=71564953)** https://github.com/SerraKD/cine-frights/labels/Could%20Have
+- **[Epic 5. Automated testing with Django](https://github.com/users/SerraKD/projects/4/views/1?pane=issue&itemId=71564953)** https://github.com/SerraKD/cine-frights/labels/Could%20Have &cross; https://github.com/SerraKD/cine-frights/labels/Wont%20Have
 > Epic Description: Automated testing to check projects functionality.
 
 I tried to built few tests in movies app and films app for forms and views, whenever i run the tests i am getting below error.
