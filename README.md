@@ -548,6 +548,9 @@ I documented validation, testing, and bugs in all separate files. Links to the r
 - [Grammarly](https://app.grammarly.com/) To check the grammar of all text content.
 - [Django-extensions](https://django-extensions.readthedocs.io/en/latest/) & [Graphviz](https://graphviz.org/) Used  to create database scheme.
 - [sqlite3](https://docs.python.org/3/library/sqlite3.html) for automated testing.
+- [crispy-bootstrap5](https://pypi.org/project/crispy-bootstrap5/) to build and customize crispy forms using Bootstrap styles.
+- [django-emoji-picker 0.0.6](https://pypi.org/project/django-emoji-picker/) to provide text input and textarea widgets with emoji picker. (**not used in the final version of the project)**
+- [django-summernote](https://pypi.org/project/django-summernote/) to integrating the Summernote editor to Django admin forms.
 
 ## **Credits**
 
