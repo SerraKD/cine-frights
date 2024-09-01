@@ -547,7 +547,7 @@ I documented validation, testing, and bugs in all separate files. Links to the r
 - [Dev Tools](https://developer.chrome.com/docs/devtools/) used throughout the project for testing, troubleshooting, and styling.
 - [Grammarly](https://app.grammarly.com/) To check the grammar of all text content.
 - [Django-extensions](https://django-extensions.readthedocs.io/en/latest/) & [Graphviz](https://graphviz.org/) Used  to create database scheme.
-
+- [sqlite3](https://docs.python.org/3/library/sqlite3.html) for automated testing.
 
 ## **Credits**
 
