@@ -551,6 +551,12 @@ I documented validation, testing, and bugs in all separate files. Links to the r
 - [crispy-bootstrap5](https://pypi.org/project/crispy-bootstrap5/) to build and customize crispy forms using Bootstrap styles.
 - [django-emoji-picker 0.0.6](https://pypi.org/project/django-emoji-picker/) to provide text input and textarea widgets with emoji picker. (**not used in the final version of the project)**
 - [django-summernote](https://pypi.org/project/django-summernote/) to integrating the Summernote editor to Django admin forms.
+- [pydotplus 2.0.2](https://pypi.org/project/pydotplus/) to provide a Python Interface to Graphviz’s Dot language.
+- [pylint-django 2.5.5](https://pypi.org/project/pylint-django/) to improve code analysis when analysing code using Django.
+- [pytz 2024.1](https://pypi.org/project/pytz/) Python library for working with time zones
+- [forms2 1.1.2](https://pypi.org/project/forms2/) provides an enhanced version of django forms.
+- [pyparsing 3.1.4](https://pypi.org/project/pyparsing/) provides a library of classes that client code uses to construct the grammar directly in Python code.
+- [dj3-cloudinary-storage 0.0.6](https://pypi.org/project/dj3-cloudinary-storage/) Django storage that provides Cloudinary storages for both media and static files as well as management commands for removing unnecessary files.
 
 ## **Credits**
 
